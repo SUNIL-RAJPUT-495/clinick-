@@ -1,0 +1,105 @@
+.laser-page {
+  font-family: 'Poppins', sans-serif;
+  background: #fff7fa;
+  color: #5e3542;
+}
+
+.laser-hero {
+  background: linear-gradient(135deg, #6a1b2e 0%, #e75480 100%);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.laser-hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.laser-hero p {
+  font-size: 1.05rem;
+  opacity: 0.95;
+}
+
+.laser-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+}
+
+.laser-image img {
+  width: 360px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(106, 27, 46, 0.15);
+  object-fit: cover;
+  height: 260px;
+}
+
+.laser-content {
+  max-width: 440px;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(106, 27, 46, 0.08);
+}
+
+.laser-content h2 {
+  color: #6a1b2e;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.laser-content p,
+.laser-content li {
+  color: #5e3542;
+  line-height: 1.7;
+}
+
+.laser-content ul {
+  padding-left: 20px;
+}
+
+.laser-content li {
+  margin: 8px 0;
+}
+
+.laser-cta {
+  text-align: center;
+  background: linear-gradient(135deg, #fff0f5 0%, #fdf2f8 100%);
+  padding: 40px 20px 60px;
+}
+
+.laser-cta h3 {
+  color: #6a1b2e;
+  margin-bottom: 12px;
+}
+
+.laser-cta button {
+  margin-top: 10px;
+  padding: 12px 24px;
+  background: #e75480;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(231, 84, 128, 0.2);
+}
+
+.laser-cta button:hover {
+  background: #c2185b;
+}
+
+@media (max-width: 768px) {
+  .laser-section {
+    padding: 30px 16px;
+  }
+
+  .laser-image img {
+    width: 100%;
+    max-width: 320px;
+  }
+}
