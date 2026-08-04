@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import siteLogo from "../../../logo.jpeg";
+import siteLogo from "../assets/tam-clinic.jpeg";
 
 function Navebar() {
   return (
