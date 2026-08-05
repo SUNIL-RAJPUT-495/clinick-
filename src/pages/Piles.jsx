@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import pilesInfoGraphic from "../assets/piles-info-graphic.webp";
 import painfulVsPainless from "../assets/painful-vs-painless.webp";
+import pilesBg from "../assets/piles-bg.jpg";
 
 const Piles = () => {
   // FAQs state for accordion toggles
@@ -29,9 +30,15 @@ const Piles = () => {
   return ( 
     <div className="min-h-screen bg-[#FFF5F8] font-sans"> 
       
-      {/* HERO BANNER */}
-      <section className="bg-gradient-to-br from-[#ffe2eb] via-[#FFF5F8] to-white py-16 md:py-24 text-center border-b border-[#F4DCE4] px-6">
-        <div className="max-w-4xl mx-auto flex flex-col gap-4">
+      {/* HERO BANNER WITH BACKGROUND IMAGE */}
+      <section 
+        className="relative py-20 md:py-28 text-center border-b border-[#F4DCE4] px-6 bg-cover bg-center overflow-hidden"
+        style={{ backgroundImage: `url(${pilesBg})` }}
+      >
+        {/* Soft readable overlay mask */}
+        <div className="absolute inset-0 bg-white/93 backdrop-blur-[1px] z-0"></div>
+
+        <div className="max-w-4xl mx-auto flex flex-col gap-4 relative z-10">
           <span className="text-[#E75480] text-xs md:text-sm font-extrabold tracking-widest uppercase bg-[#E75480]/10 px-4 py-1.5 rounded-full w-max mx-auto">
             Tamanna Clinic & Laser Piles Centre
           </span>
@@ -39,7 +46,7 @@ const Piles = () => {
             Best Piles Doctor & <br/>
             <span className="text-[#E75480] bg-gradient-to-r from-[#E75480] to-[#C2185B] bg-clip-text text-transparent">Laser Surgery Centre</span>
           </h1>
-          <p className="text-[#7A5861] text-base md:text-lg max-w-2xl mx-auto leading-relaxed mt-2">
+          <p className="text-[#7A5861] text-base md:text-lg max-w-2xl mx-auto leading-relaxed mt-2 font-semibold">
             Advanced Laser Treatment for Safe, Painless & Fast Recovery. Get long-term relief from internal, external, and bleeding piles.
           </p>
         </div>
