@@ -48,9 +48,6 @@ function Reviews() {
       
       {/* Title */}
       <div className="text-center mb-12">
-        <span className="inline-block text-[#E75480] text-xs md:text-sm font-extrabold tracking-widest uppercase bg-[#E75480]/10 px-4 py-1.5 rounded-full mb-3">
-          Verified Reviews from Justdial
-        </span>
         <h1 className="text-3xl md:text-5xl font-black text-[#6A1B2E] tracking-tight">
           Patient Reviews
         </h1>
