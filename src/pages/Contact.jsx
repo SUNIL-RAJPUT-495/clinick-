@@ -101,16 +101,30 @@ const Contact = () => {
       </div>
 
       {/* Google Map */}
-      <div className="max-w-6xl mx-auto mt-12 rounded-3xl overflow-hidden border border-[#F4DCE4] shadow-md">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.1234567890123!2d72.877655!3d19.076090!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c12345678901%3A0xabcdef1234567890!2sTamanna%20Clinic!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"   
-          width="100%"
-          height="350"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          title="Tamanna Clinic Google Map"
-        ></iframe>
+      <div className="max-w-6xl mx-auto mt-12 rounded-3xl overflow-hidden border border-[#F4DCE4] shadow-md relative group">
+        <a 
+          href="https://www.google.com/maps/search/?api=1&query=Main+road%2C+sindhi+camp%2C+near+gurunanak+school+akola" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="block relative w-full h-full text-decoration-none"
+        >
+          {/* Overlay Click Interceptor */}
+          <div className="absolute inset-0 bg-[#6A1B2E]/5 hover:bg-[#6A1B2E]/10 transition-colors z-10 flex items-center justify-center cursor-pointer">
+            <span className="bg-white/95 backdrop-blur-sm text-[#6A1B2E] px-6 py-3 rounded-full shadow-lg font-extrabold text-sm border border-[#F4DCE4] group-hover:scale-105 transition-transform duration-200">
+              📍 Click to Get Directions (Open in Google Maps)
+            </span>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.4079860642735!2d77.0142928!3d20.7038676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd73068e1a1796d%3A0xc3cf3f99e4bb2e1f!2sGurunanak+School+Akola!5e0!3m2!1sen!2sin!4v1714567890123"   
+            width="100%"
+            height="380"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            title="Tamanna Clinic Google Map"
+            className="pointer-events-none"
+          ></iframe>
+        </a>
       </div>
 
     </div>
