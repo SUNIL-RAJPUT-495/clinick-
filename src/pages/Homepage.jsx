@@ -1,36 +1,27 @@
+import femaleDoctor from "../assets/female-doctor.png";
+
 function Homepage() {
     return (
         <div className="home">
 
-            {/* HERO SECTION */}
             <section className="hero">
-                <div className="hero-content">
-                      <div className="buttons">
-                    <button className="btn primary">Book Appointment</button>
-                    <button className="btn secondary">Call Now</button>
-                </div>
-                    <h1>
-                        Advanced Laser Treatment for <span>Piles, Fissure & Fistula</span>
-                    </h1>
-
-
-                    <p className="subtitle">
-                        Safe • Painless • Minimally Invasive • Fast Recovery
-                    </p>
-
-                    <p className="desc">
-                        At Tamanna Clinic & Laser Piles Centre, we provide advanced laser
-                        treatment using modern technology and expert care for faster recovery.
-                    </p>
-
-                    <div className="features">
-                        <span>✔ Same-Day Discharge</span>
-                        <span>✔ Experienced Specialists</span>
-                        <span>✔ Advanced Laser Technology</span>
-                        <span>✔ Personalized Care</span>
+                <div className="hero-container">
+                    <div className="hero-left">
+                        <span className="hero-tagline">WE ONLY GIVE</span>
+                        <h1 className="hero-title">
+                            BEST CARE TO <br/>
+                            <span className="cyan-text">YOUR PILES</span>
+                        </h1>
+                        <div className="hero-buttons">
+                            <button className="btn-readmore">Read More</button>
+                        </div>
+                    </div>
+                    <div className="hero-right">
+                        <img src={femaleDoctor} alt="Specialist Doctor" className="hero-img" />
                     </div>
                 </div>
             </section>
+
 
             {/* ABOUT */}
             <section className="about">
