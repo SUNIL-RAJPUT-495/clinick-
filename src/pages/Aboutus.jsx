@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 import femaleDoctor from "../assets/female-doctor-premium.png";
+import clinicPhoto1 from "../assets/clinic-photo-1.jpg";
+import clinicPhoto2 from "../assets/clinic-photo-2.jpg";
+import clinicPhoto3 from "../assets/clinic-photo-3.jpg";
+import clinicPhoto4 from "../assets/clinic-photo-4.jpg";
 
 function Aboutus() {
     return (
@@ -170,6 +174,30 @@ function Aboutus() {
                                 <p className="text-[#7A5861] text-sm md:text-base leading-relaxed">Post-treatment guidance and regular follow-up for complete recovery.</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* CLINIC GALLERY */}
+            <section className="py-20 bg-white border-b border-[#F4DCE4]">
+                <div className="max-w-6xl mx-auto px-6 text-center">
+                    <span className="text-[#E75480] text-sm font-bold tracking-widest uppercase bg-[#E75480]/10 px-4 py-1.5 rounded-full">
+                        Our Infrastructure & Facilities
+                    </span>
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-[#6A1B2E] mt-4 mb-12">
+                        Inside Tamanna Clinic
+                    </h2>
+                    
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {[clinicPhoto1, clinicPhoto2, clinicPhoto3, clinicPhoto4].map((photo, index) => (
+                            <div key={index} className="relative rounded-3xl overflow-hidden border-4 border-white shadow-md hover:shadow-xl transition-all duration-300 group aspect-[4/3] bg-[#FFF5F8]">
+                                <img 
+                                    src={photo} 
+                                    alt={`Tamanna Clinic Facility ${index + 1}`} 
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                                />
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>
