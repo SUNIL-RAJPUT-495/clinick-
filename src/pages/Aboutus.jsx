@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import femaleDoctor from "../assets/female-doctor-premium.png";
 
 function Aboutus() {
     return (
@@ -6,20 +7,45 @@ function Aboutus() {
             
             {/* ABOUT HEADER / INTRO */}
             <section className="py-16 md:py-24 bg-gradient-to-br from-[#ffe2eb] via-[#FFF5F8] to-white border-b border-[#F4DCE4]">
-                <div className="max-w-5xl mx-auto px-6 text-center flex flex-col gap-6">
-                    <span className="text-[#E75480] text-sm font-bold tracking-widest uppercase bg-[#E75480]/10 px-4 py-1.5 rounded-full w-max mx-auto">
-                        Trusted Care for Better Healing
-                    </span>
-                    <h1 className="text-4xl md:text-5xl font-black text-[#6A1B2E]">
-                        About Us
-                    </h1>
-                    <div className="h-1 w-20 bg-[#E75480] rounded-full mx-auto mb-6"></div>
+                <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                     
-                    <div className="bg-white p-8 md:p-10 rounded-3xl border border-[#F4DCE4] shadow-xl shadow-[#6A1B2E]/5 text-left">
-                        <p className="text-[#5E3542] text-lg md:text-xl leading-relaxed font-semibold">
-                            <strong>Tamanna Clinic & Laser Piles Centre</strong> was founded by <strong>Dr. Tamanna Sharma</strong> with a commitment to provide advanced, compassionate, and patient-centered care for anorectal disorders. Our clinic combines modern laser technology with expert medical care to ensure safe treatment, faster recovery, and long-lasting relief for every patient.
-                        </p>
+                    {/* Left Column: Doctor Profile Card */}
+                    <div className="lg:col-span-5 flex justify-center items-center order-2 lg:order-1">
+                        <div className="relative w-full max-w-[320px] md:max-w-[360px] aspect-[4/5] rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-gradient-to-tr from-[#ffe2eb] to-white group">
+                            <img 
+                                src={femaleDoctor} 
+                                alt="Dr. Tamanna Sharma" 
+                                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out" 
+                            />
+                            {/* Overlay tag */}
+                            <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-2xl border border-[#F4DCE4]/50 shadow-lg text-left">
+                                <h4 className="text-[#6A1B2E] font-bold text-lg leading-none mb-1">Dr. Tamanna Sharma</h4>
+                                <p className="text-[#E75480] text-sm font-semibold">Founder & Lead Specialist</p>
+                            </div>
+                        </div>
                     </div>
+
+                    {/* Right Column: About text */}
+                    <div className="lg:col-span-7 text-left flex flex-col gap-6 order-1 lg:order-2">
+                        <span className="inline-block text-[#E75480] text-sm font-bold tracking-widest uppercase bg-[#E75480]/10 px-4 py-1.5 rounded-full w-max">
+                            Trusted Care for Better Healing
+                        </span>
+                        <h1 className="text-4xl md:text-5xl font-black text-[#6A1B2E] leading-tight">
+                            About Us
+                        </h1>
+                        <div className="h-1 w-20 bg-[#E75480] rounded-full"></div>
+                        
+                        <div className="bg-white p-8 md:p-10 rounded-3xl border border-[#F4DCE4] shadow-xl shadow-[#6A1B2E]/5">
+                            <p className="text-[#5E3542] text-lg md:text-xl leading-relaxed font-semibold mb-4">
+                                <strong>Tamanna Clinic & Laser Piles Centre</strong> was founded by <strong>Dr. Tamanna Sharma</strong> with a commitment to provide advanced, compassionate, and patient-centered care for anorectal disorders.
+                            </p>
+                            <p className="text-[#5E3542] text-base leading-relaxed">
+                                Our clinic combines modern laser technology with expert medical care to ensure safe treatment, faster recovery, and long-lasting relief for every patient. We prioritize confidentiality, patient comfort, and top-tier clinical hygiene.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 text-left">
                         {/* Vision */}
