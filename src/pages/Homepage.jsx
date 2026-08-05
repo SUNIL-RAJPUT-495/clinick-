@@ -220,10 +220,7 @@ function Homepage() {
             {/* CLINIC GALLERY */}
             <section className="py-20 bg-white border-b border-[#F4DCE4]">
                 <div className="max-w-7xl mx-auto px-6 text-center">
-                    <span className="text-[#E75480] text-sm font-bold tracking-widest uppercase bg-[#E75480]/10 px-4 py-1.5 rounded-full">
-                        Our Infrastructure & Facilities
-                    </span>
-                    <h2 className="text-3xl md:text-4xl font-extrabold text-[#6A1B2E] mt-4 mb-12">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-[#6A1B2E] mb-12">
                         Inside Tamanna Clinic (Akola)
                     </h2>
                     
