@@ -97,9 +97,6 @@ function Footer() {
                             <li>
                                 <button onClick={() => handleNav("/helpdesk")} className="hover:text-white transition-colors font-semibold bg-transparent border-none p-0 cursor-pointer">Helpdesk</button>
                             </li>
-                            <li>
-                                <button onClick={() => handleNav("/feedback")} className="hover:text-white transition-colors font-semibold bg-transparent border-none p-0 cursor-pointer">Feedback</button>
-                            </li>
                         </ul>
                     </div>
                 </div>
