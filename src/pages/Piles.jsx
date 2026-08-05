@@ -39,7 +39,7 @@ const Piles = () => {
         <div className="absolute inset-0 bg-[#6A1B2E]/10 backdrop-blur-[2px] z-0"></div>
 
         <div className="max-w-3xl w-full bg-white/95 backdrop-blur-md p-8 md:p-12 rounded-3xl border border-[#F4DCE4]/60 shadow-2xl flex flex-col gap-5 relative z-10 animate-fadeIn">
-          <span className="inline-block text-[#E75480] text-xs md:text-sm font-extrabold tracking-widest uppercase bg-[#E75480]/10 px-4 py-1.5 rounded-full w-max mx-auto">
+          <span className="inline-block text-[#E75480] text-xs font-extrabold tracking-widest uppercase bg-[#E75480]/10 px-4 py-1.5 rounded-full w-fit leading-normal max-w-full text-center mx-auto">
             Tamanna Clinic & Laser Piles Centre
           </span>
           <h1 className="text-3xl md:text-5xl font-black text-[#6A1B2E] leading-tight">

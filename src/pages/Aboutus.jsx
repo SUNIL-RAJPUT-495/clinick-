@@ -27,7 +27,7 @@ function Aboutus() {
 
                     {/* Right Column: About text */}
                     <div className="lg:col-span-7 text-left flex flex-col gap-6 order-1 lg:order-2">
-                        <span className="inline-block text-[#E75480] text-sm font-bold tracking-widest uppercase bg-[#E75480]/10 px-4 py-1.5 rounded-full w-max">
+                        <span className="inline-block text-[#E75480] text-xs md:text-sm font-bold tracking-widest uppercase bg-[#E75480]/10 px-4 py-1.5 rounded-full w-fit leading-normal max-w-full text-center">
                             Trusted Care for Better Healing
                         </span>
                         <h1 className="text-4xl md:text-5xl font-black text-[#6A1B2E] leading-tight">

@@ -10,8 +10,8 @@ function Homepage() {
             <section className="relative overflow-hidden bg-gradient-to-br from-[#ffe2eb] via-[#FFF5F8] to-white py-16 md:py-24 border-b border-[#F4DCE4]">
                 <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                                         {/* Left Column (Content) */}
-                    <div className="lg:col-span-7 text-center lg:text-left flex flex-col items-center lg:items-start gap-6 z-10 order-2 lg:order-1">
-                        <span className="inline-block text-[#E75480] text-sm font-extrabold tracking-widest uppercase bg-[#E75480]/10 px-4 py-1.5 rounded-full w-max">
+                    <div className="lg:col-span-7 text-center lg:text-left flex flex-col items-center lg:items-start gap-6 z-10">
+                        <span className="inline-block text-[#E75480] text-sm font-extrabold tracking-widest uppercase bg-[#E75480]/10 px-4 py-1.5 rounded-full w-fit">
                             WE ONLY GIVE
                         </span>
                         
@@ -60,7 +60,7 @@ function Homepage() {
                     </div>
                     
                     {/* Right Column (Image Card) */}
-                    <div className="lg:col-span-5 flex justify-center items-center relative mt-6 lg:mt-0 order-1 lg:order-2">
+                    <div className="lg:col-span-5 flex justify-center items-center relative mt-6 lg:mt-0">
                         {/* Decorative Background Elements */}
                         <div className="absolute w-72 h-72 md:w-96 md:h-96 bg-[#E75480] rounded-full filter blur-[80px] opacity-20 -z-10"></div>
                         <div className="absolute inset-0 bg-gradient-to-tr from-[#E75480]/10 to-transparent rounded-3xl -z-10 rotate-3 scale-105"></div>
@@ -87,7 +87,7 @@ function Homepage() {
                     
                     {/* Left Column: Text */}
                     <div className="lg:col-span-7 text-left flex flex-col gap-6">
-                        <span className="text-[#E75480] text-sm font-bold tracking-widest uppercase bg-[#E75480]/10 px-4 py-1.5 rounded-full w-max">
+                        <span className="inline-block text-[#E75480] text-xs md:text-sm font-bold tracking-widest uppercase bg-[#E75480]/10 px-4 py-1.5 rounded-full w-fit leading-normal max-w-full text-center">
                             Compassionate Care. Advanced Technology. Trusted Healing.
                         </span>
                         <h2 className="text-3xl md:text-4xl font-extrabold text-[#6A1B2E] leading-tight">
