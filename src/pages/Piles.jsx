@@ -207,63 +207,30 @@ const Piles = () => {
         </div>
 
         {/* Right Column: Sticky Contact & Image Panel */}
-        <div className="lg:col-span-4 flex flex-col gap-8">
+        <div className="lg:col-span-4">
           
-          {/* Doctor Image Block */}
-          <div className="bg-white p-6 rounded-3xl border border-[#F4DCE4] shadow-sm flex flex-col gap-4 text-center">
+          {/* Doctor Image Block & Sticky Contact */}
+          <div className="bg-white p-6 rounded-3xl border border-[#F4DCE4] shadow-md flex flex-col gap-6 sticky top-24 text-center">
             <img 
               src={pilesInfoGraphic} 
               alt="Laser Specialist Doctor" 
               className="w-full h-auto object-cover rounded-2xl border border-[#F4DCE4]"
             />
-            <div className="text-left mt-2">
-              <h4 className="text-[#6A1B2E] font-bold text-lg">Tamanna Clinic</h4>
-              <p className="text-[#7A5861] text-xs mt-1 leading-relaxed">
-                Expert proctology care specializing in minimally invasive laser surgeries. Safe treatment with state-of-the-art medical devices.
-              </p>
-            </div>
-          </div>
-
-          {/* Quick Consultation Form */}
-          <div className="bg-white p-6 rounded-3xl border border-[#F4DCE4] shadow-md flex flex-col gap-6 sticky top-24">
-            <div className="text-left">
-              <h3 className="text-lg font-bold text-[#6A1B2E]">Book a Consultation</h3>
-              <p className="text-xs text-[#7A5861] mt-1">Get custom guidance from our certified piles doctor.</p>
-            </div>
-            
-            <form className="flex flex-col gap-3">
-              <input 
-                type="text" 
-                placeholder="Full Name" 
-                className="w-full p-3 text-sm rounded-xl border border-[#F4DCE4] bg-[#FFFDFE] outline-none focus:border-[#E75480] transition-colors" 
-                required
-              />
-              <input 
-                type="tel" 
-                placeholder="Mobile Number" 
-                className="w-full p-3 text-sm rounded-xl border border-[#F4DCE4] bg-[#FFFDFE] outline-none focus:border-[#E75480] transition-colors" 
-                required
-              />
-              <textarea 
-                placeholder="Your Concern (e.g. Bleeding, Pain)" 
-                className="w-full p-3 text-sm rounded-xl border border-[#F4DCE4] bg-[#FFFDFE] outline-none focus:border-[#E75480] transition-colors min-h-[90px] resize-none"
-              ></textarea>
-              
-              <button 
-                type="submit" 
-                className="w-full py-3 bg-[#E75480] hover:bg-[#C2185B] text-white font-extrabold rounded-xl shadow-md shadow-[#E75480]/15 hover:shadow-lg transition-all duration-200"
-              >
-                Send Request
-              </button>
-            </form>
-            
-            <div className="flex items-center justify-between border-t border-[#F4DCE4] pt-4 mt-2">
-              <a href="tel:+917058430179" className="text-xs font-bold text-[#6A1B2E] hover:text-[#E75480] flex items-center gap-1.5 text-decoration-none">
-                📞 Call Directly
-              </a>
-              <a href="https://wa.me/917058430179" target="_blank" rel="noopener noreferrer" className="text-xs font-bold text-[#25D366] flex items-center gap-1.5 text-decoration-none">
-                💬 WhatsApp Chat
-              </a>
+            <div className="text-left mt-2 flex flex-col gap-4">
+              <div>
+                <h4 className="text-[#6A1B2E] font-bold text-lg">Tamanna Clinic</h4>
+                <p className="text-[#7A5861] text-xs mt-1 leading-relaxed">
+                  Expert proctology care specializing in minimally invasive laser surgeries. Safe treatment with state-of-the-art medical devices.
+                </p>
+              </div>
+              <div className="flex flex-col gap-2.5 pt-4 border-t border-[#F4DCE4]">
+                <a href="tel:+917058430179" className="w-full py-3 bg-[#E75480] hover:bg-[#C2185B] text-white font-extrabold rounded-xl shadow-md transition-colors text-center text-decoration-none text-sm">
+                  📞 Call Directly: +91 7058430179
+                </a>
+                <a href="https://wa.me/917058430179" target="_blank" rel="noopener noreferrer" className="w-full py-3 bg-[#25D366] hover:bg-[#1ebd59] text-white font-extrabold rounded-xl shadow-md transition-colors text-center text-decoration-none text-sm">
+                  💬 WhatsApp Chat
+                </a>
+              </div>
             </div>
           </div>
 
