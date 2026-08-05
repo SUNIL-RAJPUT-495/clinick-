@@ -3,7 +3,6 @@ import femaleDoctor from "../assets/female-doctor-premium.png";
 import clinicPhoto1 from "../assets/clinic-photo-1.jpg";
 import clinicPhoto2 from "../assets/clinic-photo-2.jpg";
 import clinicPhoto3 from "../assets/clinic-photo-3.jpg";
-import clinicPhoto4 from "../assets/clinic-photo-4.jpg";
 
 function Aboutus() {
     return (
@@ -188,8 +187,8 @@ function Aboutus() {
                         Inside Tamanna Clinic
                     </h2>
                     
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {[clinicPhoto1, clinicPhoto2, clinicPhoto3, clinicPhoto4].map((photo, index) => (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                        {[clinicPhoto1, clinicPhoto2, clinicPhoto3].map((photo, index) => (
                             <div key={index} className="relative rounded-3xl overflow-hidden border-4 border-white shadow-md hover:shadow-xl transition-all duration-300 group aspect-[4/3] bg-[#FFF5F8]">
                                 <img 
                                     src={photo} 
