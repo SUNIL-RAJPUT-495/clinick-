@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import femaleDoctor from "../assets/female-doctor-premium.png";
+import pilesInfoGraphic from "../assets/piles-info-graphic.webp";
 
 function Homepage() {
     return (
@@ -82,29 +83,48 @@ function Homepage() {
 
             {/* ABOUT SECTION */}
             <section className="py-20 bg-white border-b border-[#F4DCE4]">
-                <div className="max-w-5xl mx-auto px-6 text-left flex flex-col gap-6">
-                    <span className="text-[#E75480] text-sm font-bold tracking-widest uppercase">
-                        Compassionate Care. Advanced Technology. Trusted Healing.
-                    </span>
-                    <h2 className="text-3xl md:text-4xl font-extrabold text-[#6A1B2E]">
-                        About Tamanna Clinic & Laser Piles Centre
-                    </h2>
+                <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                     
-                    <div className="h-1 w-20 bg-[#E75480] rounded-full"></div>
-                    
-                    <p className="text-[#5E3542] text-lg leading-relaxed font-medium">
-                        <strong>Tamanna Clinic & Laser Piles Centre</strong> was founded by <strong>Dr. Tamanna Sharma</strong> with a vision to provide advanced, ethical, and patient-focused care for individuals suffering from anorectal and colorectal disorders.
-                    </p>
-                    
-                    <p className="text-[#5E3542] text-base md:text-lg leading-relaxed">
-                        Understanding that conditions such as piles (hemorrhoids), fissures, fistulas, pilonidal sinus, and other proctology concerns can significantly affect a person's quality of life, Dr. Tamanna Sharma established the clinic to offer modern, minimally invasive laser treatments that prioritize patient comfort, safety, and faster recovery. Every patient is treated with empathy, respect, and complete confidentiality, ensuring a stress-free healthcare experience.
-                    </p>
-                    
-                    <div className="mt-4">
-                        <Link to="/about" className="inline-block px-6 py-3 bg-[#E75480] hover:bg-[#C2185B] text-white font-bold rounded-lg shadow-md transition-all duration-200">
-                            Learn More About Us
-                        </Link>
+                    {/* Left Column: Text */}
+                    <div className="lg:col-span-7 text-left flex flex-col gap-6">
+                        <span className="text-[#E75480] text-sm font-bold tracking-widest uppercase bg-[#E75480]/10 px-4 py-1.5 rounded-full w-max">
+                            Compassionate Care. Advanced Technology. Trusted Healing.
+                        </span>
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-[#6A1B2E] leading-tight">
+                            About Tamanna Clinic & <br className="hidden md:inline"/> Laser Piles Centre
+                        </h2>
+                        
+                        <div className="h-1 w-20 bg-[#E75480] rounded-full"></div>
+                        
+                        <p className="text-[#5E3542] text-lg leading-relaxed font-medium">
+                            <strong>Tamanna Clinic & Laser Piles Centre</strong> was founded by <strong>Dr. Tamanna Sharma</strong> with a vision to provide advanced, ethical, and patient-focused care for individuals suffering from anorectal and colorectal disorders.
+                        </p>
+                        
+                        <p className="text-[#5E3542] text-base md:text-lg leading-relaxed">
+                            Understanding that conditions such as piles (hemorrhoids), fissures, fistulas, pilonidal sinus, and other proctology concerns can significantly affect a person's quality of life, Dr. Tamanna Sharma established the clinic to offer modern, minimally invasive laser treatments that prioritize patient comfort, safety, and faster recovery. Every patient is treated with empathy, respect, and complete confidentiality, ensuring a stress-free healthcare experience.
+                        </p>
+                        
+                        <div className="mt-4">
+                            <Link to="/about" className="inline-block px-8 py-3.5 bg-[#E75480] hover:bg-[#C2185B] text-white font-extrabold rounded-xl shadow-md transition-all duration-200">
+                                Learn More About Us
+                            </Link>
+                        </div>
                     </div>
+
+                    {/* Right Column: Infographic Image */}
+                    <div className="lg:col-span-5 flex justify-center items-center">
+                        <div className="relative rounded-3xl overflow-hidden border border-[#F4DCE4] shadow-lg bg-white p-4 max-w-[360px]">
+                            <img 
+                                src={pilesInfoGraphic} 
+                                alt="Piles Causes, Symptoms & Treatment Options" 
+                                className="w-full h-auto object-cover rounded-2xl"
+                            />
+                            <p className="text-xs text-[#7A5861] font-semibold text-center mt-3">
+                                Piles and Your Health: Causes, Symptoms & Treatment Options
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 

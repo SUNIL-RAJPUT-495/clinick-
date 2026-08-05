@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import pilesInfoGraphic from "../assets/piles-info-graphic.webp";
+import painfulVsPainless from "../assets/painful-vs-painless.webp";
 
 const Piles = () => {
   // FAQs state for accordion toggles
@@ -84,6 +86,27 @@ const Piles = () => {
                 <span className="text-[#E75480] text-lg">✖</span> Swelling or lumps near the anal region
               </div>
             </div>
+          </div>
+
+          {/* Painful vs Painless Section */}
+          <div className="bg-white p-8 rounded-3xl border border-[#F4DCE4] shadow-sm grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div className="flex flex-col gap-3">
+                  <h3 className="text-xl md:text-2xl font-extrabold text-[#6A1B2E]">Painful or Painless Piles?</h3>
+                  <h4 className="text-[#E75480] font-bold text-sm">Understanding the Difference</h4>
+                  <p className="text-[#5E3542] text-sm md:text-base leading-relaxed">
+                      Many patients wonder if piles are always painful. Actually, internal piles in their early stages (Grade 1 & 2) are typically painless and only noticed due to bleeding. However, external piles or internal piles that have prolapsed and become thrombosed can cause sudden, severe, and sharp pain.
+                  </p>
+                  <p className="text-[#5E3542] text-sm md:text-base leading-relaxed">
+                      Consulting our laser specialist early helps identify the correct type and treat it with minimal discomfort.
+                  </p>
+              </div>
+              <div className="flex justify-center">
+                  <img 
+                      src={painfulVsPainless} 
+                      alt="Painful vs Painless Piles infographic" 
+                      className="rounded-2xl border border-[#F4DCE4] shadow-sm max-w-full h-auto"
+                  />
+              </div>
           </div>
 
           {/* Types of Piles */}
@@ -189,9 +212,9 @@ const Piles = () => {
           {/* Doctor Image Block */}
           <div className="bg-white p-6 rounded-3xl border border-[#F4DCE4] shadow-sm flex flex-col gap-4 text-center">
             <img 
-              src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d" 
+              src={pilesInfoGraphic} 
               alt="Laser Specialist Doctor" 
-              className="w-full h-auto aspect-video object-cover rounded-2xl border border-[#F4DCE4]"
+              className="w-full h-auto object-cover rounded-2xl border border-[#F4DCE4]"
             />
             <div className="text-left mt-2">
               <h4 className="text-[#6A1B2E] font-bold text-lg">Tamanna Clinic</h4>
