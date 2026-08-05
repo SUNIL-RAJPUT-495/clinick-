@@ -44,10 +44,10 @@ function Aboutus() {
                             </p>
                         </div>
                     </div>
-
                 </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 text-left">
+                <div className="max-w-5xl mx-auto px-6 mt-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
                         {/* Vision */}
                         <div className="bg-white p-8 rounded-2xl border border-[#F4DCE4] shadow-md hover:shadow-lg transition-shadow">
                             <span className="text-4xl mb-4 inline-block">👁️</span>
