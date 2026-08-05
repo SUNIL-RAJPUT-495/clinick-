@@ -50,9 +50,9 @@ function Homepage() {
                         
                         {/* Buttons */}
                         <div className="flex flex-wrap gap-4 mt-4 justify-center lg:justify-start w-full">
-                            <Link to="/contact" className="px-8 py-4 bg-[#E75480] hover:bg-[#C2185B] text-white font-extrabold rounded-xl shadow-lg shadow-[#E75480]/20 hover:shadow-xl hover:shadow-[#E75480]/30 transform hover:-translate-y-0.5 transition-all duration-200 text-center text-base md:text-lg">
+                            <a href="https://wa.me/917058430179?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20Tamanna%20Clinic%20%26%20Laser%20Piles%20Centre." target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-[#E75480] hover:bg-[#C2185B] text-white font-extrabold rounded-xl shadow-lg shadow-[#E75480]/20 hover:shadow-xl hover:shadow-[#E75480]/30 transform hover:-translate-y-0.5 transition-all duration-200 text-center text-base md:text-lg text-decoration-none">
                                 Book an Appointment
-                            </Link>
+                            </a>
                             <a href="tel:+917058430179" className="px-8 py-4 bg-white border-2 border-[#E75480] text-[#E75480] hover:bg-[#FFF5F8] font-extrabold rounded-xl transform hover:-translate-y-0.5 transition-all duration-200 text-center text-base md:text-lg">
                                 Call Now
                             </a>

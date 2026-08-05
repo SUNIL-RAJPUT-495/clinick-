@@ -229,9 +229,9 @@ function Aboutus() {
                     </div>
                     
                     <div className="mt-8">
-                        <Link to="/contact" className="inline-block px-8 py-4 bg-[#E75480] hover:bg-[#C2185B] text-white font-extrabold text-lg rounded-xl shadow-lg shadow-[#E75480]/20 hover:shadow-xl hover:shadow-[#E75480]/30 transition-all duration-200">
+                        <a href="https://wa.me/917058430179?text=Hello%2C%20I%20would%20like%20to%20book%20a%20free%20consultation%20at%20Tamanna%20Clinic%20%26%20Laser%20Piles%20Centre." target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 bg-[#E75480] hover:bg-[#C2185B] text-white font-extrabold text-lg rounded-xl shadow-lg shadow-[#E75480]/20 hover:shadow-xl hover:shadow-[#E75480]/30 transition-all duration-200 text-decoration-none">
                             Book Your Free Consultation
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </section>

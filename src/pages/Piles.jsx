@@ -253,9 +253,9 @@ const Piles = () => {
         <p className="text-[#7A5861] text-sm md:text-base max-w-xl mx-auto leading-relaxed mb-6">
           Schedule your clinical diagnostic evaluation with Dr. Tamanna Sharma today. Take your step towards a healthier, pain-free life.
         </p>
-        <Link to="/contact" className="inline-block px-8 py-4 bg-[#E75480] hover:bg-[#C2185B] text-white font-extrabold rounded-xl shadow-lg transition-colors">
+        <a href="https://wa.me/917058430179?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20for%20laser%20piles%20treatment%20at%20Tamanna%20Clinic." target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 bg-[#E75480] hover:bg-[#C2185B] text-white font-extrabold rounded-xl shadow-lg transition-colors text-decoration-none">
           Book Appointment Now
-        </Link>
+        </a>
       </section>
 
     </div>
