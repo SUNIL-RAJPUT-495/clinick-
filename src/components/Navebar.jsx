@@ -14,7 +14,7 @@ function Navebar() {
           <img src={siteLogo} alt="Tamanna Clinic Logo" className="h-12 w-auto object-contain rounded-xl border border-[#F4DCE4] group-hover:scale-105 transition-transform duration-200" />
           <div className="flex flex-col">
             <h1 className="text-lg md:text-xl font-black text-[#6A1B2E] tracking-tight m-0 leading-none">Tamanna Clinic</h1>
-            <span className="text-[10px] md:text-xs font-bold text-[#E75480] uppercase tracking-wider mt-0.5">& Laser Piles Centre</span>
+            <span className="text-[10px] md:text-xs font-bold text-[#E75480] uppercase tracking-wider mt-0.5">& Laser Pules Centre</span>
           </div>
         </Link>
 
