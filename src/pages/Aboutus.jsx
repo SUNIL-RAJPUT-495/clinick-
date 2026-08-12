@@ -14,16 +14,32 @@ function Aboutus() {
                     
                     {/* Left Column: Doctor Profile Card */}
                     <div className="lg:col-span-5 flex justify-center items-center order-2 lg:order-1">
-                        <div className="relative w-full max-w-[320px] md:max-w-[360px] aspect-[4/5] rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-gradient-to-tr from-[#ffe2eb] to-white group">
-                            <img 
-                                src={femaleDoctor} 
-                                alt="Dr. Tamanna Sharma" 
-                                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out" 
-                            />
-                            {/* Overlay tag */}
-                            <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-2xl border border-[#F4DCE4]/50 shadow-lg text-left">
-                                <h4 className="text-[#6A1B2E] font-bold text-lg leading-none mb-1">Dr. Tamanna Sharma</h4>
-                                <p className="text-[#E75480] text-sm font-semibold">Founder & Lead Specialist</p>
+                        <div className="w-full max-w-[340px] md:max-w-[380px] bg-white rounded-3xl p-3 border border-[#F4DCE4] shadow-2xl text-left group">
+                            <div className="relative aspect-[4/4.5] rounded-2xl overflow-hidden bg-gradient-to-tr from-[#ffe2eb] to-white">
+                                <img 
+                                    src={femaleDoctor} 
+                                    alt="Dr. Tamanna Sharma - Specialist Proctologist" 
+                                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out" 
+                                />
+                            </div>
+                            <div className="p-3.5 space-y-1.5">
+                                <h4 className="text-[#6A1B2E] font-bold text-lg leading-tight flex items-center flex-wrap gap-2">
+                                    <span>Dr. Tamanna Sharma</span>
+                                    <span className="text-xs font-bold text-[#E75480] bg-[#E75480]/10 px-2.5 py-0.5 rounded-full border border-[#E75480]/20">
+                                        Reg number-99170
+                                    </span>
+                                </h4>
+                                <div className="pt-1">
+                                    <p className="text-[#E75480] text-sm font-bold leading-snug">
+                                        MS (Shalya) Pune
+                                    </p>
+                                    <p className="text-[#5E3542] text-xs font-semibold leading-relaxed mt-0.5">
+                                        Fellow in Anoproctology
+                                    </p>
+                                    <p className="text-[#7A5861] text-xs font-medium leading-relaxed">
+                                        Consultant Proctologist and Laser Specialist
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>

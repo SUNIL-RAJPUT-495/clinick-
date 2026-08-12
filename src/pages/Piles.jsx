@@ -3,6 +3,9 @@ import { useState } from "react";
 import pilesInfoGraphic from "../assets/piles-info-graphic.webp";
 import painfulVsPainless from "../assets/painful-vs-painless.webp";
 import pilesBg from "../assets/piles-bg.jpg";
+import laserTreatmentDiagram from "../assets/laser-treatment-diagram.png";
+import sclerotherapyDiagram from "../assets/sclerotherapy-diagram.png";
+import coagulationDiagram from "../assets/coagulation-diagram.png";
 
 const Piles = () => {
   // FAQs state for accordion toggles
@@ -137,13 +140,23 @@ const Piles = () => {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Laser Treatment */}
-              <div className="bg-white p-6 rounded-2xl border border-[#F4DCE4] shadow-sm flex flex-col gap-4">
+              {/* 1. Laser Treatment */}
+              <div className="bg-white p-6 rounded-2xl border border-[#F4DCE4] shadow-sm flex flex-col gap-4 group">
+                <div className="w-full h-48 rounded-xl overflow-hidden bg-[#FFF5F8] border border-[#F4DCE4]">
+                  <img 
+                    src={laserTreatmentDiagram} 
+                    alt="Laser Treatment of Hemorrhoids" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
                 <div className="flex items-center gap-3">
                   <span className="text-2xl bg-[#FFF5F8] w-10 h-10 rounded-full flex items-center justify-center border border-[#F4DCE4]">⚡</span>
                   <h4 className="font-extrabold text-[#6A1B2E] text-lg">Laser Piles Treatment</h4>
                 </div>
-                <ul className="space-y-2 text-[#5E3542] text-sm md:text-base font-semibold">
+                <p className="text-xs text-[#5E3542] leading-relaxed">
+                  Precision radial laser fiber ablates and shrinks hemorrhoidal tissue without any cuts or stitches, offering immediate relief.
+                </p>
+                <ul className="space-y-1.5 text-[#5E3542] text-xs font-semibold">
                   <li className="flex items-center gap-2"><span className="text-[#E75480]">✔</span> No cuts, wounds, or stitches</li>
                   <li className="flex items-center gap-2"><span className="text-[#E75480]">✔</span> Minimal pain & minimal bleeding</li>
                   <li className="flex items-center gap-2"><span className="text-[#E75480]">✔</span> Same-day discharge (30-45 mins)</li>
@@ -151,17 +164,72 @@ const Piles = () => {
                 </ul>
               </div>
               
-              {/* Non-Surgical Treatment */}
-              <div className="bg-white p-6 rounded-2xl border border-[#F4DCE4] shadow-sm flex flex-col gap-4">
-                <div className="flex items-center gap-3">
-                  <span className="text-2xl bg-[#FFF5F8] w-10 h-10 rounded-full flex items-center justify-center border border-[#F4DCE4]">🍏</span>
-                  <h4 className="font-extrabold text-[#6A1B2E] text-lg">Nonsurgical Methods</h4>
+              {/* 2. Sclerotherapy */}
+              <div className="bg-white p-6 rounded-2xl border border-[#F4DCE4] shadow-sm flex flex-col gap-4 group">
+                <div className="w-full h-48 rounded-xl overflow-hidden bg-[#FFF5F8] border border-[#F4DCE4]">
+                  <img 
+                    src={sclerotherapyDiagram} 
+                    alt="Sclerotherapy for Hemorrhoids" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
-                <ul className="space-y-2 text-[#5E3542] text-sm md:text-base font-semibold">
-                  <li className="flex items-center gap-2"><span className="text-[#E75480]">✔</span> Customized laxatives & medication</li>
-                  <li className="flex items-center gap-2"><span className="text-[#E75480]">✔</span> High-fiber diet counseling</li>
-                  <li className="flex items-center gap-2"><span className="text-[#E75480]">✔</span> Rubber Band Ligation (for early grades)</li>
-                  <li className="flex items-center gap-2"><span className="text-[#E75480]">✔</span> Regular clinical evaluations</li>
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl bg-[#FFF5F8] w-10 h-10 rounded-full flex items-center justify-center border border-[#F4DCE4]">💉</span>
+                  <h4 className="font-extrabold text-[#6A1B2E] text-lg">Sclerotherapy</h4>
+                </div>
+                <p className="text-xs text-[#5E3542] leading-relaxed">
+                  Injecting a sclerosing chemical agent into internal hemorrhoids creates fibrosis, cutting off blood supply so the tissue withers and falls off. Ideal for patients on blood thinners.
+                </p>
+                <ul className="space-y-1.5 text-[#5E3542] text-xs font-semibold">
+                  <li className="flex items-center gap-2"><span className="text-[#E75480]">✔</span> Non-surgical injection procedure</li>
+                  <li className="flex items-center gap-2"><span className="text-[#E75480]">✔</span> Ideal for patients on blood thinners</li>
+                  <li className="flex items-center gap-2"><span className="text-[#E75480]">✔</span> Quick relief from internal bleeding</li>
+                </ul>
+              </div>
+
+              {/* 3. Coagulation Therapy (IRC) */}
+              <div className="bg-white p-6 rounded-2xl border border-[#F4DCE4] shadow-sm flex flex-col gap-4 group">
+                <div className="w-full h-48 rounded-xl overflow-hidden bg-[#FFF5F8] border border-[#F4DCE4]">
+                  <img 
+                    src={coagulationDiagram} 
+                    alt="Infrared Coagulation (IRC)" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl bg-[#FFF5F8] w-10 h-10 rounded-full flex items-center justify-center border border-[#F4DCE4]">🔥</span>
+                  <h4 className="font-extrabold text-[#6A1B2E] text-lg">Coagulation Therapy (IRC)</h4>
+                </div>
+                <p className="text-xs text-[#5E3542] leading-relaxed">
+                  Infrared photocoagulation creates targeted scar tissue to seal bleeding vessels on non-prolapsed internal hemorrhoids with mild discomfort and quick recovery.
+                </p>
+                <ul className="space-y-1.5 text-[#5E3542] text-xs font-semibold">
+                  <li className="flex items-center gap-2"><span className="text-[#E75480]">✔</span> Infrared light creates precise scar tissue</li>
+                  <li className="flex items-center gap-2"><span className="text-[#E75480]">✔</span> Cuts off blood supply effectively</li>
+                  <li className="flex items-center gap-2"><span className="text-[#E75480]">✔</span> Quick in-clinic procedure</li>
+                </ul>
+              </div>
+
+              {/* 4. Rubber Band Ligation */}
+              <div className="bg-white p-6 rounded-2xl border border-[#F4DCE4] shadow-sm flex flex-col gap-4 group">
+                <div className="w-full h-48 rounded-xl overflow-hidden bg-gradient-to-br from-[#FFF5F8] to-[#FFE4EC] border border-[#F4DCE4] flex items-center justify-center p-4 text-center">
+                  <div className="space-y-1">
+                    <span className="text-4xl inline-block">⭕</span>
+                    <h5 className="text-[#6A1B2E] font-bold text-sm">Banding Procedure</h5>
+                    <p className="text-[11px] text-[#7A5861]">Outpatient Banding</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl bg-[#FFF5F8] w-10 h-10 rounded-full flex items-center justify-center border border-[#F4DCE4]">⭕</span>
+                  <h4 className="font-extrabold text-[#6A1B2E] text-lg">Rubber Band Ligation</h4>
+                </div>
+                <p className="text-xs text-[#5E3542] leading-relaxed">
+                  Specialized elastic bands placed at the base of internal hemorrhoids cut off circulation, causing them to wither away naturally within days. No anesthesia or OR needed.
+                </p>
+                <ul className="space-y-1.5 text-[#5E3542] text-xs font-semibold">
+                  <li className="flex items-center gap-2"><span className="text-[#E75480]">✔</span> No anesthesia or OR required</li>
+                  <li className="flex items-center gap-2"><span className="text-[#E75480]">✔</span> High success for prolapsed internal piles</li>
+                  <li className="flex items-center gap-2"><span className="text-[#E75480]">✔</span> Natural withering in few days</li>
                 </ul>
               </div>
             </div>
