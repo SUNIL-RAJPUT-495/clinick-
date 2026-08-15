@@ -9,7 +9,7 @@ function Footer() {
     };
 
     return (
-        <footer className="bg-[#6A1B2E] text-white py-16 px-6 relative overflow-hidden mt-16 border-t-4 border-[#E75480]">
+        <footer className="bg-[#0C0305] text-white py-16 px-6 relative overflow-hidden mt-16 border-t-4 border-[#E75480]">
             
             {/* Background Soft Glow */}
             <div className="absolute w-80 h-80 bg-[#E75480] rounded-full filter blur-[100px] opacity-10 -right-20 -bottom-20 pointer-events-none"></div>

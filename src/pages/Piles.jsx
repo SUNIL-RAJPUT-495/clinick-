@@ -31,21 +31,21 @@ const Piles = () => {
   ];
 
   return ( 
-    <div className="min-h-screen bg-[#FFF5F8] font-sans"> 
+    <div className="min-h-screen bg-[#120609] text-[#F3E5EC] font-sans"> 
       
       {/* HERO BANNER WITH BACKGROUND IMAGE */}
       <section 
-        className="relative py-16 md:py-24 text-center border-b border-[#F4DCE4] px-6 bg-cover bg-center overflow-hidden flex items-center justify-center"
+        className="relative py-16 md:py-24 text-center border-b border-[#33151D] px-6 bg-cover bg-center overflow-hidden flex items-center justify-center"
         style={{ backgroundImage: `url(${pilesBg})` }}
       >
         {/* Soft readable overlay mask */}
-        <div className="absolute inset-0 bg-[#6A1B2E]/10 backdrop-blur-[2px] z-0"></div>
+        <div className="absolute inset-0 bg-[#0C0305]/80 backdrop-blur-[2px] z-0"></div>
 
-        <div className="max-w-3xl w-full bg-white/95 backdrop-blur-md p-8 md:p-12 rounded-3xl border border-[#F4DCE4]/60 shadow-2xl flex flex-col gap-5 relative z-10 animate-fadeIn">
-          <span className="inline-block text-[#E75480] text-xs font-extrabold tracking-widest uppercase bg-[#E75480]/10 px-4 py-1.5 rounded-full w-fit leading-normal max-w-full text-center mx-auto">
+        <div className="max-w-3xl w-full bg-[#1D0910]/95 backdrop-blur-md p-8 md:p-12 rounded-3xl border border-[#33151D] shadow-2xl flex flex-col gap-5 relative z-10 animate-fadeIn">
+          <span className="inline-block text-[#E75480] text-xs font-extrabold tracking-widest uppercase bg-[#E75480]/15 px-4 py-1.5 rounded-full w-fit leading-normal max-w-full text-center mx-auto">
             Tamanna Clinic & Laser Piles Centre
           </span>
-          <h1 className="text-3xl md:text-5xl font-black text-[#6A1B2E] leading-tight">
+          <h1 className="text-3xl md:text-5xl font-black text-white leading-tight">
             Best Piles Doctor & <br/>
             <span className="text-[#E75480] bg-gradient-to-r from-[#E75480] to-[#C2185B] bg-clip-text text-transparent">Laser Surgery Centre</span>
           </h1>

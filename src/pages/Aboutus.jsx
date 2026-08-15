@@ -6,10 +6,10 @@ import clinicPhoto3 from "../assets/clinic-photo-3.jpg";
 
 function Aboutus() {
     return (
-        <div className="bg-[#FFF5F8] min-h-screen font-sans">
+        <div className="bg-[#120609] text-[#F3E5EC] min-h-screen font-sans">
             
             {/* ABOUT HEADER / INTRO */}
-            <section className="py-16 md:py-24 bg-gradient-to-br from-[#ffe2eb] via-[#FFF5F8] to-white border-b border-[#F4DCE4]">
+            <section className="py-16 md:py-24 bg-gradient-to-br from-[#1D0910] via-[#15070B] to-[#120609] border-b border-[#33151D]">
                 <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                     
                     {/* Left Column: Doctor Profile Card */}
@@ -22,22 +22,16 @@ function Aboutus() {
                                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out" 
                                 />
                             </div>
-                            <div className="p-3.5 space-y-1.5">
-                                <h4 className="text-[#6A1B2E] font-bold text-lg leading-tight flex items-center flex-wrap gap-2">
-                                    <span>Dr. Tamanna Sharma</span>
-                                    <span className="text-xs font-bold text-[#E75480] bg-[#E75480]/10 px-2.5 py-0.5 rounded-full border border-[#E75480]/20">
-                                        Reg number-99170
-                                    </span>
+                            <div className="p-3.5 space-y-1 text-center sm:text-left">
+                                <h4 className="text-[#6A1B2E] font-bold text-lg leading-tight m-0">
+                                    Dr. Tamanna Sharma
                                 </h4>
                                 <div className="pt-1">
-                                    <p className="text-[#E75480] text-sm font-bold leading-snug">
-                                        MS (Shalya) Pune
+                                    <p className="text-[#E75480] text-sm font-bold leading-snug uppercase">
+                                        MS Shalya Pune - 99170-A
                                     </p>
-                                    <p className="text-[#5E3542] text-xs font-semibold leading-relaxed mt-0.5">
-                                        Fellow in Anoproctology
-                                    </p>
-                                    <p className="text-[#7A5861] text-xs font-medium leading-relaxed">
-                                        Consultant Proctologist and Laser Specialist
+                                    <p className="text-[#5E3542] text-xs font-bold leading-relaxed uppercase mt-0.5">
+                                        Consultant Proctologist & Laser Specialist
                                     </p>
                                 </div>
                             </div>

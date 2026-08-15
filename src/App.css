@@ -1,13 +1,13 @@
 :root {
-  --bg: #FFF5F8;
-  --heading: #6A1B2E;
+  --bg: #120609;
+  --heading: #FFFFFF;
   --accent: #E75480;
-  --accent-hover: #C2185B;
-  --card-bg: #FFFFFF;
-  --footer-bg: #6A1B2E;
-  --text: #5E3542;
-  --muted: #7A5861;
-  --border: #F4DCE4;
+  --accent-hover: #F06292;
+  --card-bg: #1D0A10;
+  --footer-bg: #0C0305;
+  --text: #F3E5EC;
+  --muted: #C4A7B5;
+  --border: #33151D;
 }
 
 * {

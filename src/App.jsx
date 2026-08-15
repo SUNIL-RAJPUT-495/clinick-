@@ -5,6 +5,7 @@ import Homepage from './pages/Homepage';
 import Aboutus from './pages/Aboutus';
 import Contact from './pages/Contact';
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 import Reviews from "./pages/Reviews";
 import Contactf from "./pages/Contactf";
 import Faq from "./pages/Faq";
@@ -34,6 +35,7 @@ function App() {
 
       </Routes>
       <Footer />
+      <WhatsAppButton />
     </>
   )
 }
