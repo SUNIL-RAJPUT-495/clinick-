@@ -15,10 +15,12 @@ import Piles from './pages/Piles';
 import Fissure from "./pages/Fissure";
 import Fistula from './pages/Fistula';
 import Constipation from './pages/Constipation';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Navebar />
 
       <Routes>

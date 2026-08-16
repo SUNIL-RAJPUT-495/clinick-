@@ -27,20 +27,20 @@ function Homepage() {
                 
                 <div className="max-w-7xl mx-auto px-6 flex flex-col items-center text-center z-10 relative">
                     
-                    {/* ENLARGED LOGO & Clinic Name */}
-                    <div className="flex flex-col items-center gap-4 mb-6">
-                        <div className="p-4 bg-[#230C13] border-2 border-[#E75480]/40 rounded-3xl shadow-2xl shadow-[#E75480]/15 flex items-center justify-center backdrop-blur-md hover:scale-105 transition-transform duration-300">
+                    {/* ENLARGED MOBILE & DESKTOP LOGO & CLINIC NAME */}
+                    <div className="flex flex-col items-center gap-4 mb-8 w-full">
+                        <div className="p-3 sm:p-5 bg-[#230C13] border-2 border-[#E75480]/50 rounded-3xl shadow-[0_0_40px_rgba(231,84,128,0.25)] flex items-center justify-center backdrop-blur-md hover:scale-105 transition-transform duration-300">
                             <img 
                                 src={siteLogo} 
                                 alt="Tamanna Clinic Logo" 
-                                className="h-28 sm:h-36 md:h-44 w-auto object-contain rounded-2xl" 
+                                className="h-36 sm:h-48 md:h-56 w-auto max-w-[85vw] object-contain rounded-2xl" 
                             />
                         </div>
-                        <div className="flex flex-col items-center">
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight m-0">
+                        <div className="flex flex-col items-center text-center px-2">
+                            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tight m-0 leading-tight">
                                 Tamanna Clinic
                             </h1>
-                            <span className="text-base sm:text-lg md:text-xl font-extrabold text-[#E75480] uppercase tracking-widest mt-1">
+                            <span className="text-lg sm:text-xl md:text-2xl font-extrabold text-[#E75480] uppercase tracking-widest mt-1.5">
                                 & Laser Piles Centre
                             </span>
                         </div>
