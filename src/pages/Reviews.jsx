@@ -29,7 +29,7 @@ function Reviews() {
     },
     {
       name: "Rahul Sharma",
-      img: null, // Fallback to letter avatar
+      img: null,
       rating: 5,
       text: "Laser piles treatment was completely painless and very effective. Recovered within 2 days. Best proctologist in Akola.",
       date: "2 days ago"
@@ -44,12 +44,12 @@ function Reviews() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#FFF5F8] font-sans py-16 px-6">
+    <div className="min-h-screen bg-[#120609] text-[#F3E5EC] font-sans py-16 px-6">
       
       {/* Title */}
       <div className="text-center mb-12">
-        <h1 className="text-3xl md:text-5xl font-black text-[#6A1B2E] tracking-tight">
-          Patient Reviews
+        <h1 className="text-3xl md:text-5xl font-black text-white tracking-tight">
+          Patient <span className="text-[#E75480]">Reviews</span>
         </h1>
         <div className="h-1.5 w-16 bg-[#E75480] rounded-full mx-auto mt-4"></div>
       </div>
@@ -57,41 +57,46 @@ function Reviews() {
       {/* Reviews Grid */}
       <div className="max-w-4xl mx-auto flex flex-col gap-6">
         {data.map((item, index) => {
-          // Get first letter of the author name to render clean user circle avatar fallback
-          const firstLetter = item.name.trim().charAt(0).toUpperCase();
+          const firstLetter = item.name.charAt(0).toUpperCase();
 
           return (
             <div 
               key={index}
-              className="bg-white p-6 md:p-8 rounded-3xl border border-[#F4DCE4] shadow-sm flex flex-col md:flex-row gap-6 items-start text-left hover:shadow-md transition-shadow duration-200"
+              className="bg-[#1F0A11] p-6 md:p-8 rounded-3xl border border-[#3A1723] shadow-xl flex flex-col md:flex-row gap-6 items-start md:items-center text-left"
             >
-              {/* User Avatar Circle */}
-              <div className="flex items-center gap-4 md:flex-col md:items-center md:gap-2 flex-shrink-0">
-                <div className="w-14 h-14 rounded-full bg-[#FFF5F8] border-2 border-[#F4DCE4] overflow-hidden flex items-center justify-center text-[#E75480] font-black text-xl shadow-inner flex-shrink-0">
-                  {item.img ? (
-                    <img src={item.img} alt={item.name} className="w-full h-full object-cover" />
-                  ) : (
-                    firstLetter
-                  )}
-                </div>
-                <div className="md:text-center">
-                  <p className="font-extrabold text-[#6A1B2E] text-base leading-tight">
-                    {item.name}
-                  </p>
-                  <p className="text-[11px] text-[#7A5861] mt-1 font-bold">
-                    📅 {item.date}
-                  </p>
-                </div>
+              {/* User Avatar */}
+              <div className="flex-shrink-0">
+                {item.img ? (
+                  <img
+                    src={item.img}
+                    alt={item.name}
+                    className="w-16 h-16 rounded-full object-cover border-2 border-[#E75480] shadow-md"
+                  />
+                ) : (
+                  <div className="w-16 h-16 rounded-full bg-[#E75480]/20 border-2 border-[#E75480] text-[#E75480] font-black text-2xl flex items-center justify-center shadow-md">
+                    {firstLetter}
+                  </div>
+                )}
               </div>
 
-              {/* Rating & Review Body */}
-              <div className="flex-grow">
-                <div className="flex text-amber-400 text-lg gap-0.5 mb-2.5">
-                  {"★".repeat(item.rating)}
-                  {"☆".repeat(5 - item.rating)}
+              {/* Review Content */}
+              <div className="flex-1 flex flex-col gap-2">
+                <div className="flex items-center justify-between flex-wrap gap-2">
+                  <h3 className="text-white font-extrabold text-lg m-0">
+                    {item.name}
+                  </h3>
+                  <span className="text-[#D3B4C0] text-xs font-semibold">
+                    {item.date}
+                  </span>
                 </div>
-                <p className="text-[#5E3542] text-sm md:text-base leading-relaxed font-medium">
-                  {item.text}
+
+                {/* Rating Stars */}
+                <div className="flex items-center gap-1 text-[#F4C542] text-sm">
+                  {"★".repeat(item.rating)}
+                </div>
+
+                <p className="text-[#D3B4C0] text-sm md:text-base leading-relaxed mt-1">
+                  "{item.text}"
                 </p>
               </div>
 

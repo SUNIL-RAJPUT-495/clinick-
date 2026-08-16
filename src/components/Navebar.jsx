@@ -33,6 +33,7 @@ function Navebar() {
                 <Link to="/piles" className="px-4 py-2.5 text-white/90 hover:bg-[#2A1018] hover:text-[#E75480] font-bold text-sm text-decoration-none transition-colors">Piles Treatment</Link>
                 <Link to="/fissure" className="px-4 py-2.5 text-white/90 hover:bg-[#2A1018] hover:text-[#E75480] font-bold text-sm text-decoration-none transition-colors">Fissure Treatment</Link>
                 <Link to="/fistula" className="px-4 py-2.5 text-white/90 hover:bg-[#2A1018] hover:text-[#E75480] font-bold text-sm text-decoration-none transition-colors">Fistula Treatment</Link>
+                <Link to="/constipation" className="px-4 py-2.5 text-white/90 hover:bg-[#2A1018] hover:text-[#E75480] font-bold text-sm text-decoration-none transition-colors">Constipation Treatment</Link>
               </div>
             </li>
             <li>
@@ -90,6 +91,9 @@ function Navebar() {
                 </li>
                 <li>
                   <Link to="/fistula" onClick={() => setIsOpen(false)} className="block text-white/90 hover:text-[#E75480] font-bold text-base py-1 text-decoration-none">Fistula Treatment</Link>
+                </li>
+                <li>
+                  <Link to="/constipation" onClick={() => setIsOpen(false)} className="block text-white/90 hover:text-[#E75480] font-bold text-base py-1 text-decoration-none">Constipation Treatment</Link>
                 </li>
               </ul>
             </li>

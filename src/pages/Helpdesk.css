@@ -1,32 +1,32 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f7fa;
+.helpdesk-page {
+  background: #120609;
 }
 
 .helpdesk-container {
   max-width: 1000px;
-  margin: 50px auto;
+  margin: 30px auto;
   padding: 20px;
   text-align: center;
 }
 
-h1 {
+.helpdesk-container h1 {
   margin-bottom: 5px;
+  color: #ffffff;
 }
 
 .subtitle {
-  color: gray;
+  color: #D3B4C0;
   margin-bottom: 30px;
 }
 
 .helpdesk-box {
   display: flex;
-  gap: 20px;
-  background: white;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  gap: 24px;
+  background: #1F0A11;
+  padding: 30px;
+  border-radius: 24px;
+  border: 1px solid #3A1723;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 /* FORM */
@@ -39,29 +39,39 @@ h1 {
 
 .help-form input,
 .help-form textarea {
-  padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+  padding: 14px;
+  border: 1px solid #33151D;
+  background: #17080D;
+  color: #ffffff;
+  border-radius: 12px;
   font-size: 14px;
+  outline: none;
+}
+
+.help-form input:focus,
+.help-form textarea:focus {
+  border-color: #E75480;
 }
 
 .help-form textarea {
-  height: 100px;
+  height: 120px;
   resize: none;
 }
 
 .help-form button {
-  padding: 12px;
-  background: #007bff;
+  padding: 14px;
+  background: #E75480;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 12px;
   cursor: pointer;
   font-size: 16px;
+  font-weight: 800;
+  transition: background 0.2s ease;
 }
 
 .help-form button:hover {
-  background: #0056b3;
+  background: #F06292;
 }
 
 /* CONTACT INFO */
@@ -69,25 +79,36 @@ h1 {
   flex: 1;
   text-align: left;
   padding: 10px;
+  color: #D3B4C0;
 }
 
 .contact-info h3 {
   margin-bottom: 15px;
+  color: #ffffff;
+  font-size: 1.25rem;
 }
 
 .contact-info p {
-  margin: 10px 0;
+  margin: 12px 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.contact-info strong {
+  color: #ffffff;
 }
 
 /* WHATSAPP BUTTON */
 .whatsapp-btn {
   display: inline-block;
   margin-top: 15px;
-  padding: 10px 15px;
+  padding: 12px 20px;
   background: #25D366;
   color: white;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 12px;
+  font-weight: 800;
+  transition: background 0.2s ease;
 }
 
 .whatsapp-btn:hover {

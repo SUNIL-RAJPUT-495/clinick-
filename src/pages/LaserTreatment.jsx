@@ -34,24 +34,24 @@ const LaserTreatment = () => {
         className="relative py-16 md:py-24 text-center border-b border-[#33151D] px-6 bg-cover bg-center overflow-hidden flex items-center justify-center"
         style={{ backgroundImage: `url(${pilesBg})` }}
       >
-        <div className="absolute inset-0 bg-[#0C0305]/80 backdrop-blur-[2px] z-0"></div>
+        <div className="absolute inset-0 bg-[#0C0305]/85 backdrop-blur-[2px] z-0"></div>
 
-        <div className="max-w-3xl w-full bg-[#1D0910]/95 backdrop-blur-md p-8 md:p-12 rounded-3xl border border-[#33151D] shadow-2xl flex flex-col gap-5 relative z-10">
-          <span className="inline-block text-[#E75480] text-xs font-extrabold tracking-widest uppercase bg-[#E75480]/15 px-4 py-1.5 rounded-full w-fit leading-normal max-w-full text-center mx-auto">
+        <div className="max-w-3xl w-full bg-[#1F0A11]/95 backdrop-blur-md p-8 md:p-12 rounded-3xl border border-[#3A1723] shadow-2xl flex flex-col gap-5 relative z-10">
+          <span className="inline-block text-[#E75480] text-xs font-extrabold tracking-widest uppercase bg-[#E75480]/15 px-4 py-1.5 rounded-full w-fit leading-normal max-w-full text-center mx-auto border border-[#E75480]/30">
             State-Of-The-Art Proctology Care
           </span>
           <h1 className="text-3xl md:text-5xl font-black text-white leading-tight">
             Advanced Laser Proctology <br/>
-            <span className="text-[#E75480] bg-gradient-to-r from-[#E75480] to-[#C2185B] bg-clip-text text-transparent">Painless & Day-Care Surgery</span>
+            <span className="text-[#E75480] bg-gradient-to-r from-[#E75480] to-[#F06292] bg-clip-text text-transparent">Painless & Day-Care Surgery</span>
           </h1>
-          <p className="text-[#5E3542] text-sm md:text-base leading-relaxed max-w-2xl mx-auto font-semibold">
+          <p className="text-[#D3B4C0] text-sm md:text-base leading-relaxed max-w-2xl mx-auto font-semibold">
             Experience next-generation laser treatment for Piles, Fissure, and Fistula with zero cuts, minimal pain, and same-day discharge under Dr. Tamanna Sharma.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mt-2">
-            <a href="https://wa.me/917058430179?text=Hello%2C%20I%20want%20to%20consult%20for%20Laser%20Treatment%20at%20Tamanna%20Clinic." target="_blank" rel="noopener noreferrer" className="px-7 py-3 bg-[#E75480] hover:bg-[#C2185B] text-white font-bold rounded-xl shadow-md transition-all">
+            <a href="https://wa.me/917058430179?text=Hello%2C%20I%20want%20to%20consult%20for%20Laser%20Treatment%20at%20Tamanna%20Clinic." target="_blank" rel="noopener noreferrer" className="px-7 py-3 bg-[#E75480] hover:bg-[#F06292] text-white font-bold rounded-xl shadow-md transition-all text-decoration-none">
               Book Laser Consultation
             </a>
-            <a href="tel:+917058430179" className="px-7 py-3 bg-white border border-[#E75480] text-[#E75480] hover:bg-[#FFF5F8] font-bold rounded-xl transition-all">
+            <a href="tel:+917058430179" className="px-7 py-3 bg-[#17080D] border border-[#E75480] text-[#E75480] hover:bg-[#2A0E18] font-bold rounded-xl transition-all text-decoration-none">
               Call Doctor
             </a>
           </div>
@@ -65,21 +65,21 @@ const LaserTreatment = () => {
         <div className="lg:col-span-8 flex flex-col gap-12">
           
           {/* What is Laser Proctology */}
-          <div className="bg-white p-8 rounded-3xl border border-[#F4DCE4] shadow-sm grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          <div className="bg-[#1F0A11] p-8 rounded-3xl border border-[#3A1723] shadow-xl grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-7 flex flex-col gap-4">
-              <h2 className="text-2xl md:text-3xl font-extrabold text-[#6A1B2E]">
+              <h2 className="text-2xl md:text-3xl font-extrabold text-white">
                 What is Laser Proctology?
               </h2>
               <div className="h-1 w-16 bg-[#E75480] rounded-full"></div>
-              <p className="text-[#5E3542] text-base leading-relaxed">
+              <p className="text-[#D3B4C0] text-base leading-relaxed">
                 <strong>Laser Proctology</strong> represents the pinnacle of modern anorectal surgery. By focusing concentrated radial laser energy through micro-thin fibers, diseased hemorrhoidal cushions, fissure beds, and fistula tracts are treated from within.
               </p>
-              <p className="text-[#5E3542] text-sm leading-relaxed bg-[#FFF5F8] p-4 rounded-xl border border-[#F4DCE4]">
+              <p className="text-[#D3B4C0] text-sm leading-relaxed bg-[#17080D] p-4 rounded-xl border border-[#33151D]">
                 Unlike conventional open surgeries that leave large open wounds, laser energy instantly seals blood vessels and nerve endings, eliminating pain and blood loss.
               </p>
             </div>
             <div className="md:col-span-5 flex justify-center">
-              <div className="w-full rounded-2xl overflow-hidden border border-[#F4DCE4] shadow-md bg-white p-2">
+              <div className="w-full rounded-2xl overflow-hidden border border-[#33151D] shadow-md bg-[#17080D] p-2">
                 <img 
                   src={laserTreatmentDiagram} 
                   alt="Laser Surgery Mechanism" 
@@ -90,8 +90,8 @@ const LaserTreatment = () => {
           </div>
 
           {/* Key Advantages */}
-          <div className="bg-white p-8 rounded-3xl border border-[#F4DCE4] shadow-sm flex flex-col gap-6">
-            <h3 className="text-2xl md:text-3xl font-extrabold text-[#6A1B2E]">
+          <div className="bg-[#1F0A11] p-8 rounded-3xl border border-[#3A1723] shadow-xl flex flex-col gap-6">
+            <h3 className="text-2xl md:text-3xl font-extrabold text-white">
               Why Choose Laser Treatment?
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -103,55 +103,55 @@ const LaserTreatment = () => {
                 { title: "Sphincter Preservation", desc: "100% protection of anal sphincter muscles, ensuring zero risk of incontinence." },
                 { title: "Fast Recovery", desc: "Resume your routine activities and office work within 24 to 48 hours." }
               ].map((adv, idx) => (
-                <div key={idx} className="bg-[#FFF5F8] p-5 rounded-2xl border border-[#F4DCE4] flex flex-col gap-1.5">
+                <div key={idx} className="bg-[#17080D] p-5 rounded-2xl border border-[#33151D] flex flex-col gap-1.5">
                   <div className="flex items-center gap-2">
                     <span className="text-[#E75480] font-black text-lg">✔</span>
-                    <h4 className="font-extrabold text-[#6A1B2E] text-base">{adv.title}</h4>
+                    <h4 className="font-extrabold text-white text-base">{adv.title}</h4>
                   </div>
-                  <p className="text-xs text-[#5E3542] leading-relaxed pl-6">{adv.desc}</p>
+                  <p className="text-xs text-[#D3B4C0] leading-relaxed pl-6">{adv.desc}</p>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Laser Treatments Offered */}
-          <div className="bg-white p-8 rounded-3xl border border-[#F4DCE4] shadow-sm flex flex-col gap-6">
-            <h3 className="text-2xl md:text-3xl font-extrabold text-[#6A1B2E]">
+          <div className="bg-[#1F0A11] p-8 rounded-3xl border border-[#3A1723] shadow-xl flex flex-col gap-6">
+            <h3 className="text-2xl md:text-3xl font-extrabold text-white">
               Laser Procedures Offered at Tamanna Clinic
             </h3>
-            <div className="space-y-4 text-sm leading-relaxed text-[#5E3542]">
-              <div className="p-4 bg-[#FFF5F8] rounded-xl border border-[#F4DCE4]">
-                <h4 className="font-bold text-[#6A1B2E] text-base mb-1">1. LHP (Laser HemorrhoidoPlasty) for Piles</h4>
+            <div className="space-y-4 text-sm leading-relaxed text-[#D3B4C0]">
+              <div className="p-4 bg-[#17080D] rounded-xl border border-[#33151D]">
+                <h4 className="font-bold text-white text-base mb-1">1. LHP (Laser HemorrhoidoPlasty) for Piles</h4>
                 <p>Radial laser energy shrinks internal hemorrhoidal cushions from the inside, collapsing the nodes without excision.</p>
               </div>
-              <div className="p-4 bg-[#FFF5F8] rounded-xl border border-[#F4DCE4]">
-                <h4 className="font-bold text-[#6A1B2E] text-base mb-1">2. Laser Sphincterolysis & Debridement for Fissure</h4>
+              <div className="p-4 bg-[#17080D] rounded-xl border border-[#33151D]">
+                <h4 className="font-bold text-white text-base mb-1">2. Laser Sphincterolysis & Debridement for Fissure</h4>
                 <p>Gentle laser debridement cleans the chronic fissure base and relieves inner sphincter spasm to restore natural blood flow and healing.</p>
               </div>
-              <div className="p-4 bg-[#FFF5F8] rounded-xl border border-[#F4DCE4]">
-                <h4 className="font-bold text-[#6A1B2E] text-base mb-1">3. FiLaC (Fistula-tract Laser Closure) for Fistula</h4>
+              <div className="p-4 bg-[#17080D] rounded-xl border border-[#33151D]">
+                <h4 className="font-bold text-white text-base mb-1">3. FiLaC (Fistula-tract Laser Closure) for Fistula</h4>
                 <p>Flexible laser fiber inserted into the fistula tract coagulates and seals the epithelialized tract from the inside out while sparing sphincter control.</p>
               </div>
             </div>
           </div>
 
           {/* FAQs Accordion */}
-          <div className="bg-white p-8 rounded-3xl border border-[#F4DCE4] shadow-sm flex flex-col gap-6">
-            <h3 className="text-2xl md:text-3xl font-extrabold text-[#6A1B2E]">
+          <div className="bg-[#1F0A11] p-8 rounded-3xl border border-[#3A1723] shadow-xl flex flex-col gap-6">
+            <h3 className="text-2xl md:text-3xl font-extrabold text-white">
               Laser Surgery FAQs
             </h3>
             <div className="space-y-3">
               {faqs.map((faq, index) => (
-                <div key={index} className="border border-[#F4DCE4] rounded-xl overflow-hidden">
+                <div key={index} className="border border-[#33151D] rounded-xl overflow-hidden">
                   <button 
                     onClick={() => toggleFaq(index)}
-                    className="w-full p-4 text-left font-bold text-[#6A1B2E] flex justify-between items-center bg-[#FFF5F8] hover:bg-[#FFE4EC] transition-colors"
+                    className="w-full p-4 text-left font-bold text-white flex justify-between items-center bg-[#17080D] hover:bg-[#2A0E18] transition-colors"
                   >
                     <span>{faq.q}</span>
                     <span className="text-xl text-[#E75480]">{activeFaq === index ? "−" : "+"}</span>
                   </button>
                   {activeFaq === index && (
-                    <div className="p-4 bg-white text-[#5E3542] text-sm leading-relaxed border-t border-[#F4DCE4]">
+                    <div className="p-4 bg-[#120609] text-[#D3B4C0] text-sm leading-relaxed border-t border-[#33151D]">
                       {faq.a}
                     </div>
                   )}
@@ -164,41 +164,41 @@ const LaserTreatment = () => {
 
         {/* Right Sticky Card */}
         <div className="lg:col-span-4 flex flex-col gap-6">
-          <div className="bg-white p-6 rounded-3xl border border-[#F4DCE4] shadow-lg sticky top-28 space-y-6">
-            <h4 className="text-xl font-black text-[#6A1B2E] border-b border-[#F4DCE4] pb-3">
+          <div className="bg-[#1F0A11] p-6 rounded-3xl border border-[#3A1723] shadow-lg sticky top-28 space-y-6">
+            <h4 className="text-xl font-black text-white border-b border-[#3A1723] pb-3">
               Book Laser Consultation
             </h4>
-            <div className="space-y-3 text-sm text-[#5E3542]">
+            <div className="space-y-3 text-sm text-[#D3B4C0]">
               <div className="flex items-center gap-3">
                 <span className="text-[#E75480] text-lg font-bold">✔</span>
-                <span className="font-semibold">Safe & US-FDA Approved Laser Tech</span>
+                <span className="font-semibold text-white">Safe & US-FDA Approved Laser Tech</span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="text-[#E75480] text-lg font-bold">✔</span>
-                <span className="font-semibold">Experienced Proctologist Consultation</span>
+                <span className="font-semibold text-white">Experienced Proctologist Consultation</span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="text-[#E75480] text-lg font-bold">✔</span>
-                <span className="font-semibold">Same-Day Discharge Available</span>
+                <span className="font-semibold text-white">Same-Day Discharge Available</span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="text-[#E75480] text-lg font-bold">✔</span>
-                <span className="font-semibold">Complete Privacy & Comfort</span>
+                <span className="font-semibold text-white">Complete Privacy & Comfort</span>
               </div>
             </div>
 
-            <div className="pt-4 border-t border-[#F4DCE4] space-y-3">
+            <div className="pt-4 border-t border-[#3A1723] space-y-3">
               <a 
                 href="https://wa.me/917058430179?text=Hello%2C%20I%20want%20to%20book%20a%20Laser%20Treatment%20consultation%20at%20Tamanna%20Clinic." 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-full block py-3.5 bg-[#E75480] hover:bg-[#C2185B] text-white font-extrabold text-center rounded-xl shadow-md transition-all"
+                className="w-full block py-3.5 bg-[#E75480] hover:bg-[#F06292] text-white font-extrabold text-center rounded-xl shadow-md transition-all text-decoration-none"
               >
                 Book via WhatsApp
               </a>
               <a 
                 href="tel:+917058430179" 
-                className="w-full block py-3.5 bg-white border-2 border-[#E75480] text-[#E75480] hover:bg-[#FFF5F8] font-extrabold text-center rounded-xl transition-all"
+                className="w-full block py-3.5 bg-[#17080D] border-2 border-[#E75480] text-[#E75480] hover:bg-[#2A0E18] font-extrabold text-center rounded-xl transition-all text-decoration-none"
               >
                 Call: +91 70584 30179
               </a>

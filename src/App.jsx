@@ -14,6 +14,7 @@ import LaserTreatment from './pages/LaserTreatment';
 import Piles from './pages/Piles';
 import Fissure from "./pages/Fissure";
 import Fistula from './pages/Fistula';
+import Constipation from './pages/Constipation';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/piles" element={<Piles />} />
         <Route path="/fissure" element={<Fissure />} />
         <Route path="/fistula" element={<Fistula />} />
+        <Route path="/constipation" element={<Constipation />} />
 
       </Routes>
       <Footer />

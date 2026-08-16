@@ -36,23 +36,25 @@ function Faq() {
   };
 
   return (
-    <div className="faq-container">
-      <h2 className="faq-title">Frequently Asked Questions</h2>
+    <div className="faq-page min-h-screen bg-[#120609] text-[#F3E5EC] py-16 px-6">
+      <div className="faq-container">
+        <h2 className="faq-title text-3xl md:text-5xl font-black text-white mb-10">Frequently Asked Questions</h2>
 
-      {faqs.map((item, index) => (
-        <div className="faq-box" key={index}>
-          
-          <div className="faq-question" onClick={() => toggleFaq(index)}>
-            <h4>{item.q}</h4>
-            <span>{activeIndex === index ? "-" : "+"}</span>
+        {faqs.map((item, index) => (
+          <div className="faq-box" key={index}>
+            
+            <div className="faq-question" onClick={() => toggleFaq(index)}>
+              <h4 className="text-white text-base font-bold m-0">{item.q}</h4>
+              <span className="text-[#E75480] text-xl font-bold">{activeIndex === index ? "−" : "+"}</span>
+            </div>
+
+            {activeIndex === index && (
+              <p className="faq-answer">{item.a}</p>
+            )}
+
           </div>
-
-          {activeIndex === index && (
-            <p className="faq-answer">{item.a}</p>
-          )}
-
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }

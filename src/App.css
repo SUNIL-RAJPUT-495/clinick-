@@ -492,14 +492,9 @@ ul li {
   color: #ffe2eb;
 }
 .contact-container {
-  padding: 50px;
-  background: #f6f2fa;
-  font-family: "Poppins", sans-serif;
-}
-.contact-container {
   padding: 60px 20px;
-  background: #FFF5F8;
-  color: #6A1B2E;
+  background: var(--bg);
+  color: var(--text);
 }
 
 .contact-title {
@@ -507,11 +502,11 @@ ul li {
   font-size: 2.2rem;
   margin-bottom: 30px;
   font-weight: 700;
-  color: #6A1B2E;
+  color: var(--heading);
 }
 
 .contact-title span {
-  color: #E75480;
+  color: var(--accent);
 }
 
 .contact-content {
@@ -530,37 +525,38 @@ ul li {
 }
 
 .contact-container .card {
-  background: #FFFFFF;
-  border: 1px solid #F4DCE4;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
   border-radius: 16px;
   padding: 20px;
-  box-shadow: 0 6px 18px rgba(106, 27, 46, 0.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
 }
 
 .contact-container .card h3 {
   margin-bottom: 10px;
-  color: #6A1B2E;
+  color: var(--heading);
 }
 
 .contact-right form {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  background: #FFFFFF;
-  border: 1px solid #F4DCE4;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
   border-radius: 16px;
   padding: 20px;
-  box-shadow: 0 6px 18px rgba(106, 27, 46, 0.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
 }
 
 .contact-right input,
 .contact-right textarea {
   padding: 12px 14px;
-  border: 1px solid #F4DCE4;
+  border: 1px solid var(--border);
   border-radius: 10px;
   font-size: 1rem;
   outline: none;
-  background: #FFFDFE;
+  background: var(--bg);
+  color: var(--text);
 }
 
 .contact-right textarea {
@@ -569,7 +565,7 @@ ul li {
 }
 
 .contact-right button {
-  background: #E75480;
+  background: var(--accent);
   color: white;
   border: none;
   padding: 12px 16px;
@@ -579,7 +575,7 @@ ul li {
 }
 
 .contact-right button:hover {
-  background: #C2185B;
+  background: var(--accent-hover);
 }
 
 .map-container {

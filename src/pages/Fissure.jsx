@@ -27,265 +27,135 @@ const Fissure = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#FFF5F8] font-sans">
+    <div className="min-h-screen bg-[#120609] text-[#F3E5EC] font-sans selection:bg-[#E75480] selection:text-white">
 
       {/* HERO BANNER */}
       <section 
-        className="relative py-16 md:py-24 text-center border-b border-[#F4DCE4] px-6 bg-cover bg-center overflow-hidden flex items-center justify-center"
+        className="relative py-20 md:py-28 text-center border-b border-[#3A1723] px-6 bg-cover bg-center overflow-hidden flex items-center justify-center"
         style={{ backgroundImage: `url(${pilesBg})` }}
       >
-        <div className="absolute inset-0 bg-[#6A1B2E]/10 backdrop-blur-[2px] z-0"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0C0305]/90 via-[#120609]/95 to-[#120609] z-0"></div>
 
-        <div className="max-w-3xl w-full bg-white/95 backdrop-blur-md p-8 md:p-12 rounded-3xl border border-[#F4DCE4]/60 shadow-2xl flex flex-col gap-5 relative z-10">
-          <span className="inline-block text-[#E75480] text-xs font-extrabold tracking-widest uppercase bg-[#E75480]/10 px-4 py-1.5 rounded-full w-fit leading-normal max-w-full text-center mx-auto">
+        <div className="max-w-4xl w-full relative z-10 flex flex-col items-center gap-6 animate-fadeIn">
+          <span className="inline-flex items-center gap-2 text-[#E75480] text-xs md:text-sm font-extrabold tracking-widest uppercase bg-[#E75480]/10 px-5 py-2 rounded-full border border-[#E75480]/30 shadow-[0_0_20px_rgba(231,84,128,0.2)]">
+            <span className="w-2 h-2 rounded-full bg-[#E75480] animate-pulse"></span>
             Tamanna Clinic & Laser Piles Centre
           </span>
-          <h1 className="text-3xl md:text-5xl font-black text-[#6A1B2E] leading-tight">
-            Advanced Laser & Medical <br/>
-            <span className="text-[#E75480] bg-gradient-to-r from-[#E75480] to-[#C2185B] bg-clip-text text-transparent">Anal Fissure Treatment</span>
+          
+          <h1 className="text-4xl md:text-6xl font-black text-white tracking-tight leading-none">
+            Advanced Laser & Medical <br className="hidden sm:block"/>
+            <span className="bg-gradient-to-r from-[#E75480] via-[#F06292] to-[#FF80AB] bg-clip-text text-transparent">Anal Fissure Treatment</span>
           </h1>
-          <p className="text-[#5E3542] text-sm md:text-base leading-relaxed max-w-2xl mx-auto font-semibold">
-            Say goodbye to sharp burning pain and bleeding. Expert proctology care with minimally invasive laser techniques and personalized medical management.
+
+          <p className="text-[#D3B4C0] text-base md:text-lg leading-relaxed max-w-2xl font-medium">
+            Say goodbye to sharp burning pain and bleeding. Expert proctology care with sphincter-sparing laser techniques under lead specialist <strong className="text-white">Dr. Tamanna Sharma</strong>.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center mt-2">
-            <a href="https://wa.me/917058430179?text=Hello%2C%20I%20want%20to%20consult%20for%20Anal%20Fissure%20treatment." target="_blank" rel="noopener noreferrer" className="px-7 py-3 bg-[#E75480] hover:bg-[#C2185B] text-white font-bold rounded-xl shadow-md transition-all">
-              Book Appointment
+
+          <div className="flex flex-wrap gap-4 justify-center pt-2">
+            <a href="https://wa.me/917058430179?text=Hello%2C%20I%20want%20to%20consult%20for%20Anal%20Fissure%20treatment." target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-gradient-to-r from-[#E75480] to-[#C2185B] hover:from-[#F06292] hover:to-[#E75480] text-white font-extrabold rounded-2xl shadow-[0_10px_30px_rgba(231,84,128,0.35)] transition-all hover:scale-105 text-decoration-none">
+              💬 Book Consultation
             </a>
-            <a href="tel:+917058430179" className="px-7 py-3 bg-white border border-[#E75480] text-[#E75480] hover:bg-[#FFF5F8] font-bold rounded-xl transition-all">
-              Call Doctor
+            <a href="tel:+917058430179" className="px-8 py-4 bg-[#1F0A11] border border-[#E75480]/50 text-[#F3E5EC] hover:bg-[#2A0E18] font-extrabold rounded-2xl transition-all text-decoration-none hover:border-[#E75480]">
+              📞 Call Doctor: +91 7058430179
             </a>
           </div>
         </div>
       </section>
 
-      {/* MAIN CONTENT CONTAINER */}
-      <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-12 gap-12 text-left">
+      {/* MAIN CONTENT EDITORIAL LAYOUT */}
+      <section className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-12 gap-12 text-left">
         
-        {/* Left Column (Details) */}
-        <div className="lg:col-span-8 flex flex-col gap-12">
+        {/* Left Column */}
+        <div className="lg:col-span-8 flex flex-col gap-14">
           
-          {/* Overview Card with Diagram */}
-          <div className="bg-white p-8 rounded-3xl border border-[#F4DCE4] shadow-sm grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-            <div className="md:col-span-7 flex flex-col gap-4">
-              <h2 className="text-2xl md:text-3xl font-extrabold text-[#6A1B2E]">
-                What is an Anal Fissure?
-              </h2>
-              <div className="h-1 w-16 bg-[#E75480] rounded-full"></div>
-              <p className="text-[#5E3542] text-base leading-relaxed">
-                An <strong>anal fissure</strong> is a small tear or crack in the thin, moist tissue that lines the anus. It is one of the most painful anorectal conditions, frequently characterized by intense burning pain during and after bowel movements, accompanied by bright red streaks of blood.
-              </p>
-              <p className="text-[#5E3542] text-sm leading-relaxed bg-[#FFF5F8] p-4 rounded-xl border border-[#F4DCE4]">
-                With modern laser technology and sphincter relaxation therapies at <strong>Tamanna Clinic</strong>, fissures can be healed quickly with minimal recurrence and zero surgical trauma.
-              </p>
-            </div>
-            <div className="md:col-span-5 flex justify-center">
-              <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-[#1D4ED8] p-1 shadow-lg bg-white">
-                <img 
-                  src={fissureDiagram} 
-                  alt="Anal Fissure Anatomy Diagram" 
-                  className="w-full h-full object-cover rounded-full"
-                />
-              </div>
-            </div>
-          </div>
+          {/* SECTION 1: CLINICAL INTRO */}
+          <div className="bg-gradient-to-br from-[#1C0A11] via-[#17080D] to-[#120609] p-8 md:p-12 rounded-3xl border border-[#3A1723] shadow-2xl relative overflow-hidden group">
+            <div className="absolute -right-20 -top-20 w-60 h-60 bg-[#E75480]/10 rounded-full blur-3xl pointer-events-none group-hover:bg-[#E75480]/20 transition-all duration-700"></div>
 
-          {/* Causes Section */}
-          <div className="bg-white p-8 rounded-3xl border border-[#F4DCE4] shadow-sm flex flex-col gap-6">
-            <div>
-              <span className="text-[#E75480] text-xs font-bold tracking-widest uppercase">Etiology & Triggers</span>
-              <h3 className="text-2xl md:text-3xl font-extrabold text-[#6A1B2E] mt-1">
-                What causes an anal fissure?
-              </h3>
-            </div>
-            
-            <p className="text-[#5E3542] text-base leading-relaxed">
-              Anal fissures can be caused by trauma to the anal mucosa as well as elevated sphincter muscle pressure:
+            <span className="text-[#E75480] text-xs font-bold uppercase tracking-widest">Rapid Pain Management</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-white mt-2 mb-4">
+              Instant Relief from Anal Fissure Pain
+            </h2>
+            <div className="h-1 w-20 bg-gradient-to-r from-[#E75480] to-transparent rounded-full mb-6"></div>
+
+            <p className="text-[#D3B4C0] text-base md:text-lg leading-relaxed mb-6 font-normal">
+              Anal Fissure is one of the most painful anorectal conditions, characterized by severe tearing pain during stool passage, intense internal muscle spasms, and bleeding. At <strong className="text-white">Tamanna Clinic</strong>, Dr. Tamanna Sharma provides comprehensive diagnostic assessment and gentle sphincterotomy laser therapy for immediate pain resolution.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="flex items-start gap-3 bg-[#FFF5F8] p-4 rounded-xl border border-[#F4DCE4]">
-                <span className="text-[#E75480] text-lg font-bold">›</span>
-                <div>
-                  <h5 className="font-bold text-[#6A1B2E] text-sm">Hard or Large Stools</h5>
-                  <p className="text-xs text-[#7A5861] mt-0.5">Passage of dry, large, or hard stool tears the delicate lining.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3 bg-[#FFF5F8] p-4 rounded-xl border border-[#F4DCE4]">
-                <span className="text-[#E75480] text-lg font-bold">›</span>
-                <div>
-                  <h5 className="font-bold text-[#6A1B2E] text-sm">Repeated Diarrhea</h5>
-                  <p className="text-xs text-[#7A5861] mt-0.5">Frequent liquid stools cause chemical irritation and inflammation.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3 bg-[#FFF5F8] p-4 rounded-xl border border-[#F4DCE4]">
-                <span className="text-[#E75480] text-lg font-bold">›</span>
-                <div>
-                  <h5 className="font-bold text-[#6A1B2E] text-sm">Childbirth & Vaginal Delivery</h5>
-                  <p className="text-xs text-[#7A5861] mt-0.5">Trauma to the perineum and anal canal during labor.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3 bg-[#FFF5F8] p-4 rounded-xl border border-[#F4DCE4]">
-                <span className="text-[#E75480] text-lg font-bold">›</span>
-                <div>
-                  <h5 className="font-bold text-[#6A1B2E] text-sm">Prolonged Muscular Spasm</h5>
-                  <p className="text-xs text-[#7A5861] mt-0.5">Chronic involuntary spasms in the internal anal sphincter.</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-[#F0F9FF] p-5 rounded-2xl border border-[#BAE6FD] text-[#0F2D59] text-sm leading-relaxed space-y-2">
-              <h5 className="font-bold text-base text-[#0284C7]">Sphincter Tension & Blood Flow Mechanism:</h5>
-              <p>
-                The extra tension in the two muscular rings (sphincters) controlling the anus may cause fissures as well. The outer anal sphincter is under your conscious control, but the inner sphincter is not. This muscle is under pressure or tension all the time to keep the anal canal closed.
-              </p>
-              <p>
-                If the pressure increases too much, it can cause spasms and reduce blood flow to the anus, leading to a fissure. This continuous high pressure also starves the tissue of oxygen and prevents the fissure from healing on its own.
+            <div className="p-6 rounded-2xl bg-[#120609]/80 border-l-4 border-[#E75480] border border-[#3A1723]">
+              <p className="text-[#F3E5EC] text-base md:text-lg leading-relaxed italic m-0">
+                "Our laser fissure procedure relaxes hyperactive inner sphincter spasms instantly without large surgical wounds or permanent scarring, restoring painless bowel function."
               </p>
             </div>
           </div>
 
-          {/* Symptoms Section */}
-          <div className="bg-white p-8 rounded-3xl border border-[#F4DCE4] shadow-sm flex flex-col gap-6">
-            <div>
-              <span className="text-[#E75480] text-xs font-bold tracking-widest uppercase">Clinical Presentation</span>
-              <h3 className="text-2xl md:text-3xl font-extrabold text-[#6A1B2E] mt-1">
-                What are the Symptoms?
-              </h3>
+          {/* SECTION 2: ANATOMY & SURGERY INFOGRAPHICS */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-gradient-to-br from-[#1C0A11] via-[#17080D] to-[#120609] p-6 rounded-3xl border border-[#3A1723] shadow-xl flex flex-col gap-4">
+              <h3 className="font-extrabold text-white text-lg">Anal Fissure Anatomy</h3>
+              <img src={fissureDiagram} alt="Anal Fissure Diagram" className="w-full h-52 object-cover rounded-2xl border border-[#3A1723] shadow-md" />
+              <p className="text-xs text-[#D3B4C0] leading-relaxed">A small tear in the mucosal lining of the anal canal triggering severe inner sphincter spasms and burning pain.</p>
             </div>
 
-            <ul className="space-y-4 text-[#5E3542] text-sm md:text-base leading-relaxed">
-              <li className="flex items-start gap-3 bg-[#FFF5F8] p-4 rounded-xl border border-[#F4DCE4]">
-                <span className="text-[#E75480] font-black text-xl leading-none">›</span>
-                <div>
-                  <strong className="text-[#6A1B2E]">Sharp Burning Pain:</strong> Severe, cutting or burning pain during bowel movements that can persist from a few minutes to several hours afterwards.
-                </div>
-              </li>
-              <li className="flex items-start gap-3 bg-[#FFF5F8] p-4 rounded-xl border border-[#F4DCE4]">
-                <span className="text-[#E75480] font-black text-xl leading-none">›</span>
-                <div>
-                  <strong className="text-[#6A1B2E]">Anal Bleeding:</strong> Normally a small spot of bright red blood on toilet tissue or drops in the toilet bowl. The blood from a fissure is separate from the stool, not mixed with it.
-                </div>
-              </li>
-              <li className="flex items-start gap-3 bg-[#FFF5F8] p-4 rounded-xl border border-[#F4DCE4]">
-                <span className="text-[#E75480] font-black text-xl leading-none">›</span>
-                <div>
-                  <strong className="text-[#6A1B2E]">Anal Itching & Irritation:</strong> Persistent pruritus (itching) and skin redness around the peri-anal area.
-                </div>
-              </li>
-              <li className="flex items-start gap-3 bg-[#FFF5F8] p-4 rounded-xl border border-[#F4DCE4]">
-                <span className="text-[#E75480] font-black text-xl leading-none">›</span>
-                <div>
-                  <strong className="text-[#6A1B2E]">Sentinel Polyp / Skin Tag:</strong> If the anal fissure is left untreated and becomes chronic, a small skin tag called a "sentinel polyp" forms at the apex of the fissure.
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          {/* Treatment Options Section */}
-          <div className="bg-white p-8 rounded-3xl border border-[#F4DCE4] shadow-sm flex flex-col gap-6">
-            <div>
-              <span className="text-[#E75480] text-xs font-bold tracking-widest uppercase">Expert Medical Solutions</span>
-              <h3 className="text-2xl md:text-3xl font-extrabold text-[#6A1B2E] mt-1">
-                Treatment for Anal Fissure
-              </h3>
-            </div>
-
-            <div className="space-y-6 text-[#5E3542] text-sm md:text-base leading-relaxed">
-              
-              {/* 1. Initial Medical Therapy */}
-              <div className="border border-[#F4DCE4] rounded-2xl p-5 bg-[#FFF5F8]">
-                <h4 className="font-extrabold text-[#6A1B2E] text-lg mb-2 flex items-center gap-2">
-                  <span className="text-[#E75480]">1.</span> Initial Medical Therapy
-                </h4>
-                <p>
-                  Initially, medical therapy with a special local ointment (such as diltiazem/nitroglycerin to relax the sphincter), stool softeners, fiber supplements, and pain relief is attempted. If the fissure does not heal within 3 months and fibrotic scar tissue forms, advanced intervention is recommended.
-                </p>
-              </div>
-
-              {/* 2. Laser Fissure Treatment */}
-              <div className="border border-[#F4DCE4] rounded-2xl p-5 bg-white shadow-sm">
-                <h4 className="font-extrabold text-[#6A1B2E] text-lg mb-2 flex items-center gap-2">
-                  <span className="text-[#E75480]">2.</span> Advanced Laser Fissure Treatment
-                </h4>
-                <p>
-                  A modern, painless daycare procedure where laser energy is used to debride the fibrosed fissure bed and relieve the internal sphincter spasm. It enables rapid wound healing without open surgical cuts or incontinence risk.
-                </p>
-              </div>
-
-              {/* 3. Lateral Internal Sphincterotomy (LIS) */}
-              <div className="border border-[#F4DCE4] rounded-2xl p-5 bg-white shadow-sm">
-                <h4 className="font-extrabold text-[#6A1B2E] text-lg mb-2 flex items-center gap-2">
-                  <span className="text-[#E75480]">3.</span> Lateral Internal Sphincterotomy (LIS)
-                </h4>
-                <p>
-                  The main etiology of chronic anal fissures is internal sphincter spasm. In cases where muscle spasm is the main causative component, a small precision incision on the inner sphincter is performed (LIS), taking utmost care to safeguard continence and restore healthy blood supply.
-                </p>
-              </div>
-
-              {/* 4. Surgical Fissurectomy & Sentinel Polyp Excision */}
-              <div className="border border-[#F4DCE4] rounded-2xl p-5 bg-white shadow-sm grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-                <div className="md:col-span-7">
-                  <h4 className="font-extrabold text-[#6A1B2E] text-lg mb-2 flex items-center gap-2">
-                    <span className="text-[#E75480]">4.</span> Surgical Fissurectomy & Sentinel Polyp Excision
-                  </h4>
-                  <p className="text-sm leading-relaxed">
-                    Normally, surgical fissurectomy is performed to clean unhealed edges. Contextual sentinel polyp excision (skin tag removal) is done simultaneously using <strong>Conventional or LASER excision</strong> to remove the irritating chronic skin tag and leave a fresh, healthy edge to heal cleanly.
-                  </p>
-                </div>
-                <div className="md:col-span-5 flex justify-center">
-                  <div className="rounded-2xl overflow-hidden border-2 border-[#F4DCE4] shadow-md bg-white p-1 max-w-[280px]">
-                    <img 
-                      src={fissureSurgeryDiagram} 
-                      alt="Fissure and Sentinel Skin Tag Excision Laser Diagram" 
-                      className="w-full h-auto object-contain rounded-xl"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* 5. Botox Injections for Anal Fissures */}
-              <div className="border border-[#F4DCE4] rounded-2xl p-5 bg-white shadow-sm">
-                <h4 className="font-extrabold text-[#6A1B2E] text-lg mb-2 flex items-center gap-2">
-                  <span className="text-[#E75480]">5.</span> Botox Injections for Anal Fissures
-                </h4>
-                <p>
-                  In select cases, Botox injections provide a successful, temporary chemical sphincter relaxation treatment for pain caused by muscular spasms in the anal sphincter, promoting natural fissure closure.
-                </p>
-              </div>
-
-              {/* 6. Anal Flap Fashioning */}
-              <div className="border border-[#F4DCE4] rounded-2xl p-5 bg-white shadow-sm">
-                <h4 className="font-extrabold text-[#6A1B2E] text-lg mb-2 flex items-center gap-2">
-                  <span className="text-[#E75480]">6.</span> Anal Flap Fashioning
-                </h4>
-                <p>
-                  In more advanced or complex chronic cases, anal advancement flap fashioning is performed to cover the fissure defect with healthy, well-vascularized tissue to ensure permanent healing.
-                </p>
-              </div>
-
+            <div className="bg-gradient-to-br from-[#1C0A11] via-[#17080D] to-[#120609] p-6 rounded-3xl border border-[#3A1723] shadow-xl flex flex-col gap-4">
+              <h3 className="font-extrabold text-white text-lg">Laser Sphincterotomy Procedure</h3>
+              <img src={fissureSurgeryDiagram} alt="Laser Fissure Surgery" className="w-full h-52 object-cover rounded-2xl border border-[#3A1723] shadow-md" />
+              <p className="text-xs text-[#D3B4C0] leading-relaxed">Micro-laser energy gently relieves hyperactive sphincter pressure, restoring natural micro-vascular circulation to the fissure bed.</p>
             </div>
           </div>
 
-          {/* FAQs Accordion */}
-          <div className="bg-white p-8 rounded-3xl border border-[#F4DCE4] shadow-sm flex flex-col gap-6">
-            <h3 className="text-2xl md:text-3xl font-extrabold text-[#6A1B2E]">
-              Frequently Asked Questions
-            </h3>
+          {/* SECTION 3: KEY ADVANTAGES */}
+          <div className="bg-gradient-to-br from-[#1C0A11] via-[#17080D] to-[#120609] p-8 md:p-12 rounded-3xl border border-[#3A1723] shadow-2xl flex flex-col gap-6">
+            <div>
+              <span className="text-[#E75480] text-xs font-bold uppercase tracking-widest">Why Choose Laser Care</span>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-white mt-2">
+                Key Benefits of Laser Fissure Treatment
+              </h2>
+              <div className="h-1 w-20 bg-gradient-to-r from-[#E75480] to-transparent rounded-full mt-4"></div>
+            </div>
+
+            <div className="space-y-4">
+              <div className="flex items-start gap-4 p-4 rounded-2xl bg-[#17080D] border border-[#33151D]">
+                <span className="text-2xl text-[#E75480]">⚡</span>
+                <div>
+                  <h4 className="text-white font-extrabold text-base">Instant Relief from Burning Pain</h4>
+                  <p className="text-xs md:text-sm text-[#D3B4C0] leading-relaxed mt-1">Relieves the painful anal sphincter spasm immediately after the 30-minute laser procedure.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-4 rounded-2xl bg-[#17080D] border border-[#33151D]">
+                <span className="text-2xl text-[#E75480]">✂️</span>
+                <div>
+                  <h4 className="text-white font-extrabold text-base">Zero Open Cuts or Stitches</h4>
+                  <p className="text-xs md:text-sm text-[#D3B4C0] leading-relaxed mt-1">Micro-thermal laser ablation leaves no open surgical wounds, requiring minimal post-op dressing.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-4 rounded-2xl bg-[#17080D] border border-[#33151D]">
+                <span className="text-2xl text-[#E75480]">🛡️</span>
+                <div>
+                  <h4 className="text-white font-extrabold text-base">100% Sphincter Preservation</h4>
+                  <p className="text-xs md:text-sm text-[#D3B4C0] leading-relaxed mt-1">Protects natural anal continent muscle function with zero risk of fecal leakage.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* SECTION 4: FAQS */}
+          <div className="flex flex-col gap-4">
+            <h3 className="text-2xl font-extrabold text-white">Frequently Asked Questions</h3>
             <div className="space-y-3">
               {faqs.map((faq, index) => (
-                <div key={index} className="border border-[#F4DCE4] rounded-xl overflow-hidden">
+                <div key={index} className="bg-[#1F0A11] border border-[#3A1723] rounded-2xl overflow-hidden">
                   <button 
                     onClick={() => toggleFaq(index)}
-                    className="w-full p-4 text-left font-bold text-[#6A1B2E] flex justify-between items-center bg-[#FFF5F8] hover:bg-[#FFE4EC] transition-colors"
+                    className="w-full p-5 text-left font-bold text-white flex justify-between items-center hover:bg-[#2A0E18] transition-colors"
                   >
                     <span>{faq.q}</span>
-                    <span className="text-xl text-[#E75480]">{activeFaq === index ? "−" : "+"}</span>
+                    <span className="text-lg text-[#E75480]">{activeFaq === index ? "−" : "+"}</span>
                   </button>
                   {activeFaq === index && (
-                    <div className="p-4 bg-white text-[#5E3542] text-sm leading-relaxed border-t border-[#F4DCE4]">
+                    <div className="p-5 border-t border-[#3A1723] text-sm text-[#D3B4C0] leading-relaxed bg-[#17080D]">
                       {faq.a}
                     </div>
                   )}
@@ -296,50 +166,41 @@ const Fissure = () => {
 
         </div>
 
-        {/* Right Column: Sticky Doctor & Appointment Card */}
-        <div className="lg:col-span-4 flex flex-col gap-6">
-          <div className="bg-white p-6 rounded-3xl border border-[#F4DCE4] shadow-lg sticky top-28 space-y-6">
-            <h4 className="text-xl font-black text-[#6A1B2E] border-b border-[#F4DCE4] pb-3">
-              Consult Specialist Doctor
-            </h4>
-            <div className="space-y-3 text-sm text-[#5E3542]">
-              <div className="flex items-center gap-3">
-                <span className="text-[#E75480] text-lg font-bold">✔</span>
-                <span className="font-semibold">Day Care Laser Surgery</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <span className="text-[#E75480] text-lg font-bold">✔</span>
-                <span className="font-semibold">Same-Day Discharge</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <span className="text-[#E75480] text-lg font-bold">✔</span>
-                <span className="font-semibold">Painless & Rapid Recovery</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <span className="text-[#E75480] text-lg font-bold">✔</span>
-                <span className="font-semibold">100% Confidential Consultation</span>
-              </div>
+        {/* Right Column: Sticky Sidebar Panel */}
+        <div className="lg:col-span-4">
+          <div className="bg-gradient-to-b from-[#1F0A11] to-[#17080D] p-6 md:p-8 rounded-3xl border border-[#3A1723] shadow-2xl flex flex-col gap-6 sticky top-28 text-center">
+            <div className="text-left space-y-3">
+              <h4 className="text-white font-extrabold text-xl">Consult Dr. Tamanna Sharma</h4>
+              <p className="text-[#E75480] text-xs font-bold uppercase tracking-wider">MS Shalya Pune - 99170-A</p>
+              <p className="text-[#D3B4C0] text-xs leading-relaxed">
+                Get an accurate proctology assessment and personalized fissure treatment plan with complete privacy and comfort.
+              </p>
             </div>
 
-            <div className="pt-4 border-t border-[#F4DCE4] space-y-3">
-              <a 
-                href="https://wa.me/917058430179?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Anal%20Fissure%20treatment%20at%20Tamanna%20Clinic." 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-full block py-3.5 bg-[#E75480] hover:bg-[#C2185B] text-white font-extrabold text-center rounded-xl shadow-md transition-all"
-              >
-                Book via WhatsApp
+            <div className="flex flex-col gap-3 pt-2">
+              <a href="https://wa.me/917058430179?text=Hello%2C%20I%20want%20to%20consult%20for%20Anal%20Fissure." target="_blank" rel="noopener noreferrer" className="w-full py-3.5 bg-[#E75480] hover:bg-[#F06292] text-white font-extrabold rounded-xl shadow-lg transition-all text-decoration-none text-sm">
+                💬 Consult on WhatsApp
               </a>
-              <a 
-                href="tel:+917058430179" 
-                className="w-full block py-3.5 bg-white border-2 border-[#E75480] text-[#E75480] hover:bg-[#FFF5F8] font-extrabold text-center rounded-xl transition-all"
-              >
-                Call: +91 70584 30179
+              <a href="tel:+917058430179" className="w-full py-3.5 bg-[#17080D] border border-[#E75480] text-[#E75480] hover:bg-[#2A0E18] font-extrabold rounded-xl transition-all text-decoration-none text-sm">
+                📞 Call: +91 7058430179
               </a>
             </div>
           </div>
         </div>
 
+      </section>
+
+      {/* BOTTOM CTA */}
+      <section className="bg-gradient-to-r from-[#17080D] via-[#2E0F1A] to-[#17080D] py-16 text-center border-t border-[#33151D] px-6">
+        <h2 className="text-3xl font-extrabold text-white mb-3">
+          End Fissure Burning Pain Today
+        </h2>
+        <p className="text-[#D3B4C0] text-base max-w-xl mx-auto mb-8">
+          Schedule your confidential evaluation with Dr. Tamanna Sharma today.
+        </p>
+        <a href="https://wa.me/917058430179?text=Hello%2C%20I%20want%20to%20consult%20for%20Anal%20Fissure." target="_blank" rel="noopener noreferrer" className="inline-block px-10 py-4 bg-[#E75480] hover:bg-[#F06292] text-white font-extrabold rounded-2xl shadow-xl transition-all hover:scale-105 text-decoration-none">
+          Book Appointment Now
+        </a>
       </section>
 
     </div>
