@@ -29,34 +29,7 @@ const LaserTreatment = () => {
   return (
     <div className="min-h-screen bg-[#120609] text-[#F3E5EC] font-sans">
 
-      {/* HERO BANNER */}
-      <section 
-        className="relative py-16 md:py-24 text-center border-b border-[#33151D] px-6 bg-cover bg-center overflow-hidden flex items-center justify-center"
-        style={{ backgroundImage: `url(${pilesBg})` }}
-      >
-        <div className="absolute inset-0 bg-[#0C0305]/85 backdrop-blur-[2px] z-0"></div>
 
-        <div className="max-w-3xl w-full bg-[#1F0A11]/95 backdrop-blur-md p-8 md:p-12 rounded-3xl border border-[#3A1723] shadow-2xl flex flex-col gap-5 relative z-10">
-          <span className="inline-block text-[#E75480] text-xs font-extrabold tracking-widest uppercase bg-[#E75480]/15 px-4 py-1.5 rounded-full w-fit leading-normal max-w-full text-center mx-auto border border-[#E75480]/30">
-            State-Of-The-Art Proctology Care
-          </span>
-          <h1 className="text-3xl md:text-5xl font-black text-white leading-tight">
-            Advanced Laser Proctology <br/>
-            <span className="text-[#E75480] bg-gradient-to-r from-[#E75480] to-[#F06292] bg-clip-text text-transparent">Painless & Day-Care Surgery</span>
-          </h1>
-          <p className="text-[#D3B4C0] text-sm md:text-base leading-relaxed max-w-2xl mx-auto font-semibold">
-            Experience next-generation laser treatment for Piles, Fissure, and Fistula with zero cuts, minimal pain, and same-day discharge under Dr. Tamanna Sharma.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center mt-2">
-            <a href="https://wa.me/917058430179?text=Hello%2C%20I%20want%20to%20consult%20for%20Laser%20Treatment%20at%20Tamanna%20Clinic." target="_blank" rel="noopener noreferrer" className="px-7 py-3 bg-[#E75480] hover:bg-[#F06292] text-white font-bold rounded-xl shadow-md transition-all text-decoration-none">
-              Book Laser Consultation
-            </a>
-            <a href="tel:+917058430179" className="px-7 py-3 bg-[#17080D] border border-[#E75480] text-[#E75480] hover:bg-[#2A0E18] font-bold rounded-xl transition-all text-decoration-none">
-              Call Doctor
-            </a>
-          </div>
-        </div>
-      </section>
 
       {/* MAIN CONTENT */}
       <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-12 gap-12 text-left">

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import topPilesBanner from "../assets/WhatsApp Image 2026-08-15 at 3.07.25 PM.jpeg";
 import pilesInfoGraphic from "../assets/piles-info-graphic.webp";
 import painfulVsPainless from "../assets/painful-vs-painless.webp";
 import pilesBg from "../assets/piles-bg.jpg";
@@ -29,61 +30,34 @@ const Piles = () => {
     }
   ];
 
-  return ( 
-    <div className="min-h-screen bg-[#120609] text-[#F3E5EC] font-sans selection:bg-[#E75480] selection:text-white"> 
+  return (
+    <div className="min-h-screen bg-[#120609] text-[#F3E5EC] font-sans selection:bg-[#E75480] selection:text-white">
       
-      {/* HERO BANNER - BORDERLESS */}
-      <section 
-        className="relative py-20 md:py-28 text-center px-6 bg-cover bg-center overflow-hidden flex items-center justify-center"
-        style={{ backgroundImage: `url(${pilesBg})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0C0305]/90 via-[#120609]/95 to-[#120609] z-0"></div>
-
-        <div className="max-w-4xl w-full relative z-10 flex flex-col items-center gap-6 animate-fadeIn">
-          <span className="inline-flex items-center gap-2 text-[#E75480] text-xs md:text-sm font-extrabold tracking-widest uppercase bg-[#E75480]/10 px-5 py-2 rounded-full border border-[#E75480]/30 shadow-[0_0_20px_rgba(231,84,128,0.2)]">
-            <span className="w-2 h-2 rounded-full bg-[#E75480] animate-pulse"></span>
-            Tamanna Clinic & Laser Piles Centre
-          </span>
-          
-          <h1 className="text-4xl md:text-6xl font-black text-white tracking-tight leading-none">
-            Best Piles Doctor & <br className="hidden sm:block"/>
-            <span className="bg-gradient-to-r from-[#E75480] via-[#F06292] to-[#FF80AB] bg-clip-text text-transparent">Laser Surgery Centre</span>
-          </h1>
-
-          <p className="text-[#D3B4C0] text-base md:text-lg leading-relaxed max-w-2xl font-medium">
-            Advanced Laser Treatment for Safe, Painless & Fast Recovery. Get long-term relief from internal, external, and bleeding piles under <strong className="text-white">Dr. Tamanna Sharma</strong>.
-          </p>
-
-          <div className="flex flex-wrap gap-4 justify-center pt-2">
-            <a href="https://wa.me/917058430179?text=Hello%2C%20I%20want%20to%20consult%20for%20Laser%20Piles%20Treatment." target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-gradient-to-r from-[#E75480] to-[#C2185B] hover:from-[#F06292] hover:to-[#E75480] text-white font-extrabold rounded-2xl shadow-[0_10px_30px_rgba(231,84,128,0.35)] transition-all hover:scale-105 text-decoration-none">
-              💬 Book Consultation
-            </a>
-            <a href="tel:+917058430179" className="px-8 py-4 bg-[#1F0A11] border border-[#E75480]/50 text-[#F3E5EC] hover:bg-[#2A0E18] font-extrabold rounded-2xl transition-all text-decoration-none hover:border-[#E75480]">
-              📞 Call Doctor: +91 7058430179
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* SEAMLESS BORDERLESS CONTENT FLOW */}
       <section className="max-w-5xl mx-auto px-6 py-12 text-left flex flex-col gap-16">
-        
-        {/* SECTION 1: CLINICAL OVERVIEW */}
+
+        {/* SECTION: WHAT ARE HEMORRHOIDS */}
         <div className="space-y-6">
-          <span className="text-[#E75480] text-xs font-bold uppercase tracking-widest">Medical Excellence & Expertise</span>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white">
-            Advanced Piles Treatment
-          </h2>
-          <div className="h-1 w-20 bg-gradient-to-r from-[#E75480] to-transparent rounded-full"></div>
+          <div>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-white mt-1">
+              What are hemorrhoids?
+            </h2>
+            <div className="h-1 w-20 bg-gradient-to-r from-[#E75480] to-transparent rounded-full mt-3"></div>
+          </div>
 
           <p className="text-[#D3B4C0] text-base md:text-lg leading-relaxed font-normal">
-            People suffering from piles, looking for the best doctor for piles, our experienced proctology experts offer safe, painless, and advanced piles treatment at high success rates. We treat all grades of piles using modern laser procedures and nonsurgical methods to guarantee quick recovery and long-term relief.
+            Hemorrhoids are swollen, enlarged veins that form inside and outside of your anus and rectum. They can be painful and uncomfortable and cause bleeding. Hemorrhoids are also called piles.
           </p>
 
-          <div className="py-4 border-l-4 border-[#E75480] pl-6 text-[#D3B4C0]">
-            <p className="text-[#F3E5EC] text-base md:text-lg leading-relaxed italic m-0">
-              "Dr. Tamanna Sharma is a certified proctologist and specialist in Laser Piles Treatment. She provides personalized care with minimal pain and fast recovery, ensuring maximum patient comfort and permanent cure."
-            </p>
+          {/* TOP IMAGE - RIGHT BELOW WHAT ARE HEMORRHOIDS TEXT */}
+          <div className="w-full flex justify-center pt-4">
+            <div className="max-w-2xl w-full rounded-2xl overflow-hidden shadow-2xl border border-[#3A1723] bg-white p-2 sm:p-4">
+              <img 
+                src={topPilesBanner} 
+                alt="Anatomy of Internal and External Hemorrhoids (Rectum)" 
+                className="w-full h-auto object-contain rounded-xl"
+              />
+            </div>
           </div>
         </div>
 
@@ -220,6 +194,27 @@ const Piles = () => {
 
         <div className="h-0.5 bg-gradient-to-r from-transparent via-[#E75480]/30 to-transparent"></div>
 
+        {/* SECTION 1: CLINICAL OVERVIEW (MOVED HERE JUST ABOVE PAINFUL OR PAINLESS PILES) */}
+        <div className="space-y-6">
+          <span className="text-[#E75480] text-xs font-bold uppercase tracking-widest">Medical Excellence & Expertise</span>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-white">
+            Advanced Piles Treatment
+          </h2>
+          <div className="h-1 w-20 bg-gradient-to-r from-[#E75480] to-transparent rounded-full"></div>
+
+          <p className="text-[#D3B4C0] text-base md:text-lg leading-relaxed font-normal">
+            People suffering from piles, looking for the best doctor for piles, our experienced proctology experts offer safe, painless, and advanced piles treatment at high success rates. We treat all grades of piles using modern laser procedures and nonsurgical methods to guarantee quick recovery and long-term relief.
+          </p>
+
+          <div className="py-4 border-l-4 border-[#E75480] pl-6 text-[#D3B4C0]">
+            <p className="text-[#F3E5EC] text-base md:text-lg leading-relaxed italic m-0">
+              "Dr. Tamanna Sharma is a certified proctologist and specialist in Laser Piles Treatment. She provides personalized care with minimal pain and fast recovery, ensuring maximum patient comfort and permanent cure."
+            </p>
+          </div>
+        </div>
+
+        <div className="h-0.5 bg-gradient-to-r from-transparent via-[#E75480]/30 to-transparent"></div>
+
         {/* SECTION 5: PAINFUL VS PAINLESS INFOGRAPHIC */}
         <div className="space-y-6">
           <h3 className="text-3xl font-extrabold text-white">Painful or Painless Piles?</h3>
@@ -227,9 +222,9 @@ const Piles = () => {
             Internal piles in early stages (Grade 1 & 2) are typically painless and noticed due to bleeding. External piles or prolapsed thrombosed hemorrhoids cause sudden sharp pain.
           </p>
           <div className="w-full rounded-3xl overflow-hidden shadow-2xl my-4">
-            <img 
-              src={painfulVsPainless} 
-              alt="Painful vs Painless Piles infographic" 
+            <img
+              src={painfulVsPainless}
+              alt="Painful vs Painless Piles infographic"
               className="w-full h-auto rounded-3xl object-cover"
             />
           </div>
@@ -288,7 +283,7 @@ const Piles = () => {
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div key={index} className="py-2 border-b border-[#33151D]">
-                <button 
+                <button
                   onClick={() => toggleFaq(index)}
                   className="w-full text-left font-bold text-white text-lg flex justify-between items-center bg-transparent border-0 cursor-pointer py-2"
                 >

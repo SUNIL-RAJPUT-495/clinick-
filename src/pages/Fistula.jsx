@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import fistulaClassificationBanner from "../assets/WhatsApp Image 2026-08-15 at 3.17.13 PM.jpeg";
 import fistulaDiagram from "../assets/fistula-diagram.png";
 import fistulaClassificationDiagram from "../assets/fistula-classification-diagram.jpg";
 import fistulaSetonDiagram from "../assets/fistula-seton-diagram.jpg";
@@ -34,36 +35,6 @@ const Fistula = () => {
   return (
     <div className="min-h-screen bg-[#120609] text-[#F3E5EC] font-sans selection:bg-[#E75480] selection:text-white">
 
-      {/* HERO BANNER - BORDERLESS */}
-      <section 
-        className="relative py-20 md:py-28 text-center px-6 bg-cover bg-center overflow-hidden flex items-center justify-center"
-        style={{ backgroundImage: `url(${pilesBg})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0C0305]/90 via-[#120609]/95 to-[#120609] z-0"></div>
-
-        <div className="max-w-4xl w-full relative z-10 flex flex-col items-center gap-6 animate-fadeIn">
-          <span className="inline-flex items-center gap-2 text-[#E75480] text-xs md:text-sm font-extrabold tracking-widest uppercase bg-[#E75480]/10 px-5 py-2 rounded-full border border-[#E75480]/30">
-            <span className="w-2 h-2 rounded-full bg-[#E75480] animate-pulse"></span>
-            Tamanna Clinic & Laser Piles Centre
-          </span>
-          <h1 className="text-4xl md:text-6xl font-black text-white tracking-tight leading-none">
-            Advanced Laser & Sphincter-Saving <br className="hidden sm:block"/>
-            <span className="bg-gradient-to-r from-[#E75480] via-[#F06292] to-[#FF80AB] bg-clip-text text-transparent">Anal Fistula Treatment</span>
-          </h1>
-          <p className="text-[#D3B4C0] text-base md:text-lg leading-relaxed max-w-2xl font-medium">
-            Safe, painless, and highly effective laser fistula closure (FiLaC / SiLaC) that eliminates recurrent discharge, protects sphincter continence, and ensures faster recovery.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center pt-2">
-            <a href="https://wa.me/917058430179?text=Hello%2C%20I%20want%20to%20consult%20for%20Anal%20Fistula%20treatment." target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-gradient-to-r from-[#E75480] to-[#C2185B] hover:from-[#F06292] hover:to-[#E75480] text-white font-extrabold rounded-2xl shadow-[0_10px_30px_rgba(231,84,128,0.35)] transition-all hover:scale-105 text-decoration-none">
-              💬 Book Appointment
-            </a>
-            <a href="tel:+917058430179" className="px-8 py-4 bg-[#1F0A11] border border-[#E75480]/50 text-[#F3E5EC] hover:bg-[#2A0E18] font-extrabold rounded-2xl transition-all text-decoration-none hover:border-[#E75480]">
-              📞 Call Specialist
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* SEAMLESS BORDERLESS CONTENT FLOW */}
       <section className="max-w-5xl mx-auto px-6 py-12 text-left flex flex-col gap-16">
           
@@ -95,6 +66,17 @@ const Fistula = () => {
         </div>
 
         <div className="h-0.5 bg-gradient-to-r from-transparent via-[#E75480]/30 to-transparent"></div>
+
+        {/* IMAGE JUST ABOVE DIAGNOSTIC & SURGICAL CLASSIFICATION */}
+        <div className="w-full flex justify-center py-2">
+          <div className="max-w-2xl w-full rounded-2xl overflow-hidden shadow-2xl border border-[#3A1723] bg-white p-2 sm:p-4">
+            <img 
+              src={fistulaClassificationBanner} 
+              alt="Diagnostic and Surgical Classification Diagram" 
+              className="w-full h-auto object-contain rounded-xl"
+            />
+          </div>
+        </div>
 
         {/* SECTION 2: CLASSIFICATION - WHY THE TYPE OF FISTULA MATTERS */}
         <div className="space-y-6">
