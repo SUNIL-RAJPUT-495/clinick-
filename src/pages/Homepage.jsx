@@ -12,7 +12,6 @@ import coagulationDiagram from "../assets/coagulation-diagram.png";
 import clinicPhoto1 from "../assets/clinic-photo-1.jpg";
 import clinicPhoto2 from "../assets/clinic-photo-2.jpg";
 import clinicPhoto3 from "../assets/clinic-photo-3.jpg";
-import pilonidalSinusDiagram from "../assets/pilonidal-sinus-diagram.jpg";
 import constipationDiagram from "../assets/constipation-diagram.jpg";
 
 function Homepage() {
@@ -218,42 +217,7 @@ function Homepage() {
                                 </div>
                             </div>
 
-                            {/* Divider Line */}
-                            <div className="border-b border-dashed border-[#3A1723] my-4 sm:my-6"></div>
-
-                            {/* 4. PILONIDAL SINUS */}
-                            <div className="flex flex-row items-start gap-3 sm:gap-6">
-                                <div className="w-20 h-20 sm:w-36 sm:h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-2 sm:border-[3px] border-[#E75480] p-1 bg-[#17080D] shadow-lg flex-shrink-0 flex items-center justify-center">
-                                    <img
-                                        src={pilonidalSinusDiagram}
-                                        alt="Pilonidal Sinus Illustration"
-                                        className="w-full h-full object-cover rounded-full"
-                                    />
-                                </div>
-                                <div className="flex-1 text-left">
-                                    <h3 className="text-base sm:text-2xl md:text-3xl font-black text-[#E75480] tracking-wide uppercase mb-2">
-                                        PILONIDAL SINUS
-                                    </h3>
-                                    <ul className="space-y-1 sm:space-y-2 text-[#D3B4C0] text-xs sm:text-base font-medium">
-                                        <li className="flex items-start gap-1.5 sm:gap-2.5">
-                                            <span className="text-[#E75480] font-black text-sm sm:text-lg leading-none mt-0.5">•</span>
-                                            <span>Laser Pilonidal Sinus Treatment</span>
-                                        </li>
-                                        <li className="flex items-start gap-1.5 sm:gap-2.5">
-                                            <span className="text-[#E75480] font-black text-sm sm:text-lg leading-none mt-0.5">•</span>
-                                            <span>Sinus Tract Excision</span>
-                                        </li>
-                                        <li className="flex items-start gap-1.5 sm:gap-2.5">
-                                            <span className="text-[#E75480] font-black text-sm sm:text-lg leading-none mt-0.5">•</span>
-                                            <span>Minimal Scarring</span>
-                                        </li>
-                                        <li className="flex items-start gap-1.5 sm:gap-2.5">
-                                            <span className="text-[#E75480] font-black text-sm sm:text-lg leading-none mt-0.5">•</span>
-                                            <span>Quick Recovery & Less Recurrence</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                            {/* 3. FISTULA TREATMENT */}
 
                             {/* Divider Line */}
                             <div className="border-b border-dashed border-[#3A1723] my-4 sm:my-6"></div>
@@ -390,18 +354,18 @@ function Homepage() {
                     {/* Cards Grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                         
-                        {/* Card 1: Laser Piles */}
+                        {/* Card 1: Laser Piles Treatment */}
                         <Link to="/piles" className="group bg-[#1F0A11] p-6 sm:p-8 rounded-3xl border border-[#3A1723] hover:border-[#E75480]/60 shadow-xl hover:shadow-[0_10px_30px_rgba(231,84,128,0.2)] transform hover:-translate-y-1.5 transition-all duration-300 text-left flex flex-col justify-between text-decoration-none">
                             <div>
                                 <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-[#E75480] p-1 bg-[#17080D] shadow-lg mb-6 group-hover:scale-105 transition-transform duration-300">
                                     <img 
                                         src={pilesDiagram} 
-                                        alt="Laser Piles" 
+                                        alt="Laser Piles Treatment" 
                                         className="w-full h-full object-cover rounded-full"
                                     />
                                 </div>
                                 <h3 className="text-xl sm:text-2xl font-black text-white group-hover:text-[#E75480] transition-colors mb-3">
-                                    Laser Piles
+                                    Laser Piles Treatment
                                 </h3>
                                 <p className="text-[#D3B4C0] text-sm sm:text-base leading-relaxed">
                                     Advanced LHP treatment with minimal pain, zero stitches, and quick healing for long-term relief.
@@ -413,41 +377,18 @@ function Homepage() {
                             </div>
                         </Link>
 
-                        {/* Card 2: Fissure Treatment */}
-                        <Link to="/fissure" className="group bg-[#1F0A11] p-6 sm:p-8 rounded-3xl border border-[#3A1723] hover:border-[#E75480]/60 shadow-xl hover:shadow-[0_10px_30px_rgba(231,84,128,0.2)] transform hover:-translate-y-1.5 transition-all duration-300 text-left flex flex-col justify-between text-decoration-none">
-                            <div>
-                                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-[#E75480] p-1 bg-[#17080D] shadow-lg mb-6 group-hover:scale-105 transition-transform duration-300">
-                                    <img 
-                                        src={fissureDiagram} 
-                                        alt="Fissure Treatment" 
-                                        className="w-full h-full object-cover rounded-full"
-                                    />
-                                </div>
-                                <h3 className="text-xl sm:text-2xl font-black text-white group-hover:text-[#E75480] transition-colors mb-3">
-                                    Fissure Treatment
-                                </h3>
-                                <p className="text-[#D3B4C0] text-sm sm:text-base leading-relaxed">
-                                    Fast recovery for chronic and acute anal fissures with specialized sphincter-preserving techniques.
-                                </p>
-                            </div>
-                            <div className="mt-6 pt-4 border-t border-[#33151D] flex items-center justify-between text-[#E75480] text-sm font-bold">
-                                <span>Learn More</span>
-                                <span className="group-hover:translate-x-1 transition-transform">→</span>
-                            </div>
-                        </Link>
-
-                        {/* Card 3: Fistula Treatment */}
+                        {/* Card 2: Laser Fistula Treatment */}
                         <Link to="/fistula" className="group bg-[#1F0A11] p-6 sm:p-8 rounded-3xl border border-[#3A1723] hover:border-[#E75480]/60 shadow-xl hover:shadow-[0_10px_30px_rgba(231,84,128,0.2)] transform hover:-translate-y-1.5 transition-all duration-300 text-left flex flex-col justify-between text-decoration-none">
                             <div>
                                 <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-[#E75480] p-1 bg-[#17080D] shadow-lg mb-6 group-hover:scale-105 transition-transform duration-300">
                                     <img 
                                         src={fistulaDiagram} 
-                                        alt="Fistula Treatment" 
+                                        alt="Laser Fistula Treatment" 
                                         className="w-full h-full object-cover rounded-full"
                                     />
                                 </div>
                                 <h3 className="text-xl sm:text-2xl font-black text-white group-hover:text-[#E75480] transition-colors mb-3">
-                                    Fistula Treatment
+                                    Laser Fistula Treatment
                                 </h3>
                                 <p className="text-[#D3B4C0] text-sm sm:text-base leading-relaxed">
                                     Minimally invasive FiLaC laser procedure sealing fistula tracks safely while protecting sphincter control.
@@ -459,21 +400,21 @@ function Homepage() {
                             </div>
                         </Link>
 
-                        {/* Card 4: Pilonidal Sinus */}
-                        <Link to="/laserTreatment" className="group bg-[#1F0A11] p-6 sm:p-8 rounded-3xl border border-[#3A1723] hover:border-[#E75480]/60 shadow-xl hover:shadow-[0_10px_30px_rgba(231,84,128,0.2)] transform hover:-translate-y-1.5 transition-all duration-300 text-left flex flex-col justify-between text-decoration-none">
+                        {/* Card 3: Laser Fissure Treatment */}
+                        <Link to="/fissure" className="group bg-[#1F0A11] p-6 sm:p-8 rounded-3xl border border-[#3A1723] hover:border-[#E75480]/60 shadow-xl hover:shadow-[0_10px_30px_rgba(231,84,128,0.2)] transform hover:-translate-y-1.5 transition-all duration-300 text-left flex flex-col justify-between text-decoration-none">
                             <div>
                                 <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-[#E75480] p-1 bg-[#17080D] shadow-lg mb-6 group-hover:scale-105 transition-transform duration-300">
                                     <img 
-                                        src={pilonidalSinusDiagram} 
-                                        alt="Pilonidal Sinus" 
+                                        src={fissureDiagram} 
+                                        alt="Laser Fissure Treatment" 
                                         className="w-full h-full object-cover rounded-full"
                                     />
                                 </div>
                                 <h3 className="text-xl sm:text-2xl font-black text-white group-hover:text-[#E75480] transition-colors mb-3">
-                                    Pilonidal Sinus
+                                    Laser Fissure Treatment
                                 </h3>
                                 <p className="text-[#D3B4C0] text-sm sm:text-base leading-relaxed">
-                                    Safe SiLaC laser ablation ensuring minimal scarring, quick healing, and low recurrence rates.
+                                    Fast recovery for chronic and acute anal fissures with specialized sphincter-preserving techniques.
                                 </p>
                             </div>
                             <div className="mt-6 pt-4 border-t border-[#33151D] flex items-center justify-between text-[#E75480] text-sm font-bold">
@@ -482,18 +423,18 @@ function Homepage() {
                             </div>
                         </Link>
 
-                        {/* Card 5: Constipation */}
+                        {/* Card 4: Constipation Treatment */}
                         <Link to="/constipation" className="group bg-[#1F0A11] p-6 sm:p-8 rounded-3xl border border-[#3A1723] hover:border-[#E75480]/60 shadow-xl hover:shadow-[0_10px_30px_rgba(231,84,128,0.2)] transform hover:-translate-y-1.5 transition-all duration-300 text-left flex flex-col justify-between text-decoration-none">
                             <div>
                                 <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-[#E75480] p-1 bg-[#17080D] shadow-lg mb-6 group-hover:scale-105 transition-transform duration-300">
                                     <img 
                                         src={constipationDiagram} 
-                                        alt="Constipation" 
+                                        alt="Constipation Treatment" 
                                         className="w-full h-full object-cover rounded-full"
                                     />
                                 </div>
                                 <h3 className="text-xl sm:text-2xl font-black text-white group-hover:text-[#E75480] transition-colors mb-3">
-                                    Constipation
+                                    Constipation Treatment
                                 </h3>
                                 <p className="text-[#D3B4C0] text-sm sm:text-base leading-relaxed">
                                     Expert medical guidance, dietary plans, and therapeutic management for chronic constipation & digestion.
@@ -501,29 +442,6 @@ function Homepage() {
                             </div>
                             <div className="mt-6 pt-4 border-t border-[#33151D] flex items-center justify-between text-[#E75480] text-sm font-bold">
                                 <span>Learn More</span>
-                                <span className="group-hover:translate-x-1 transition-transform">→</span>
-                            </div>
-                        </Link>
-
-                        {/* Card 6: Consultation */}
-                        <Link to="/helpdesk" className="group bg-[#1F0A11] p-6 sm:p-8 rounded-3xl border border-[#3A1723] hover:border-[#E75480]/60 shadow-xl hover:shadow-[0_10px_30px_rgba(231,84,128,0.2)] transform hover:-translate-y-1.5 transition-all duration-300 text-left flex flex-col justify-between text-decoration-none">
-                            <div>
-                                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-[#E75480] p-1 bg-[#17080D] shadow-lg mb-6 group-hover:scale-105 transition-transform duration-300">
-                                    <img 
-                                        src={laserTreatmentDiagram} 
-                                        alt="Consultation" 
-                                        className="w-full h-full object-cover rounded-full"
-                                    />
-                                </div>
-                                <h3 className="text-xl sm:text-2xl font-black text-white group-hover:text-[#E75480] transition-colors mb-3">
-                                    Consultation
-                                </h3>
-                                <p className="text-[#D3B4C0] text-sm sm:text-base leading-relaxed">
-                                    Complete confidential proctology diagnosis, examination, and tailored treatment plans under Dr. Tamanna Sharma.
-                                </p>
-                            </div>
-                            <div className="mt-6 pt-4 border-t border-[#33151D] flex items-center justify-between text-[#E75480] text-sm font-bold">
-                                <span>Book Now</span>
                                 <span className="group-hover:translate-x-1 transition-transform">→</span>
                             </div>
                         </Link>
