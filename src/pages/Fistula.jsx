@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import fistulaClassificationBanner from "../assets/WhatsApp Image 2026-08-15 at 3.17.13 PM.jpeg";
+import fistulaClassificationBanner from "../assets/WhatsApp Image 2026-08-19 at 5.05.48 PM.jpeg";
 import fistulaDiagram from "../assets/fistula-diagram.png";
 import fistulaClassificationDiagram from "../assets/fistula-classification-diagram.jpg";
 import fistulaSetonDiagram from "../assets/fistula-seton-diagram.jpg";

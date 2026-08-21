@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
+import FacilitySlider from "../components/FacilitySlider";
 import femaleDoctor from "../assets/female-doctor-premium.png";
-import clinicPhoto1 from "../assets/clinic-photo-1.jpg";
-import clinicPhoto2 from "../assets/clinic-photo-2.jpg";
-import clinicPhoto3 from "../assets/clinic-photo-3.jpg";
 
 function Aboutus() {
     return (
@@ -118,23 +116,16 @@ function Aboutus() {
 
             {/* FACILITY PHOTOS */}
             <section className="py-20 bg-[#120609]">
-                <div className="max-w-7xl mx-auto px-6 text-center">
-                    <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-12">
+                <div className="max-w-7xl mx-auto px-6 text-center mb-10">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-white">
                         Inside Tamanna Clinic (Akola)
                     </h2>
-                    
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-                        {[clinicPhoto1, clinicPhoto2, clinicPhoto3].map((photo, index) => (
-                            <div key={index} className="relative rounded-3xl overflow-hidden border-4 border-[#3A1723] shadow-lg hover:shadow-2xl transition-all duration-300 group aspect-[4/3] bg-[#17080D]">
-                                <img 
-                                    src={photo} 
-                                    alt={`Tamanna Clinic Akola Facility ${index + 1}`} 
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                                />
-                            </div>
-                        ))}
-                    </div>
+                    <p className="text-[#D3B4C0] text-sm mt-2 font-medium">
+                        Take a tour of our modern facilities, consultation rooms & laser treatment center
+                    </p>
                 </div>
+
+                <FacilitySlider />
             </section>
 
         </div>

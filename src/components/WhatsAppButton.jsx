@@ -23,11 +23,11 @@ function WhatsAppButton() {
             }, 7500);
         };
 
-        // Initial trigger after 2 seconds
-        const initialTimer = setTimeout(triggerSequence, 2000);
+        // Initial trigger after 5 seconds
+        const initialTimer = setTimeout(triggerSequence, 5000);
 
-        // Repeat sequence every 16 seconds
-        const interval = setInterval(triggerSequence, 16000);
+        // Repeat sequence every 45 seconds (less frequent and non-intrusive)
+        const interval = setInterval(triggerSequence, 45000);
 
         return () => {
             clearTimeout(initialTimer);
@@ -41,23 +41,23 @@ function WhatsAppButton() {
     };
 
     return (
-        <div className="fixed bottom-10 sm:bottom-14 right-4 sm:right-8 z-50 flex flex-col items-end pointer-events-none">
-            
+        <div className="fixed bottom-4 sm:bottom-14 right-3 sm:right-8 z-50 flex flex-col items-end pointer-events-none">
+
             {/* STEP 1: REALISTIC TYPING INDICATOR BUBBLE */}
             {isTyping && (
-                <div className="pointer-events-auto mb-3 w-[240px] sm:w-[270px] bg-[#0B141A] rounded-2xl border border-white/10 p-3 shadow-2xl flex items-center gap-3 animate-fadeIn">
-                    <div className="relative w-8 h-8 rounded-full overflow-hidden border border-[#E75480] bg-[#120609] flex-shrink-0">
+                <div className="pointer-events-auto mb-2 w-[165px] sm:w-[210px] bg-[#0B141A] rounded-xl border border-white/10 p-2 sm:p-2.5 shadow-2xl flex items-center gap-2 sm:gap-2.5 animate-fadeIn">
+                    <div className="relative w-6 h-6 sm:w-7 sm:h-7 rounded-full overflow-hidden border border-[#E75480] bg-[#120609] flex-shrink-0">
                         <img src={femaleDoctor} alt="Dr. Tamanna Sharma" className="w-full h-full object-cover" />
-                        <span className="absolute bottom-0 right-0 w-2 h-2 bg-[#25D366] rounded-full"></span>
+                        <span className="absolute bottom-0 right-0 w-1.5 h-1.5 bg-[#25D366] rounded-full"></span>
                     </div>
                     <div className="flex flex-col text-left">
-                        <span className="text-white text-xs font-bold">Dr. Tamanna Sharma</span>
+                        <span className="text-white text-[10px] sm:text-[11px] font-bold">Dr. Tamanna Sharma</span>
                         <div className="flex items-center gap-1 mt-0.5">
-                            <span className="text-[#8696a0] text-[11px] font-semibold">is typing</span>
-                            <div className="flex items-center gap-1 ml-1">
-                                <span className="w-1.5 h-1.5 bg-[#25D366] rounded-full animate-bounce"></span>
-                                <span className="w-1.5 h-1.5 bg-[#25D366] rounded-full animate-bounce [animation-delay:0.2s]"></span>
-                                <span className="w-1.5 h-1.5 bg-[#25D366] rounded-full animate-bounce [animation-delay:0.4s]"></span>
+                            <span className="text-[#8696a0] text-[9px] sm:text-[10px] font-semibold">is typing</span>
+                            <div className="flex items-center gap-0.5 ml-0.5">
+                                <span className="w-1 h-1 bg-[#25D366] rounded-full animate-bounce"></span>
+                                <span className="w-1 h-1 bg-[#25D366] rounded-full animate-bounce [animation-delay:0.2s]"></span>
+                                <span className="w-1 h-1 bg-[#25D366] rounded-full animate-bounce [animation-delay:0.4s]"></span>
                             </div>
                         </div>
                     </div>
@@ -68,27 +68,27 @@ function WhatsAppButton() {
             {isMessageVisible && (
                 <div 
                     onClick={handleWhatsAppRedirect}
-                    className="pointer-events-auto mb-3.5 w-[260px] sm:w-[285px] bg-[#0B141A] rounded-2xl overflow-hidden shadow-2xl border border-white/10 text-left transition-all duration-300 transform scale-100 animate-fadeIn cursor-pointer"
+                    className="pointer-events-auto mb-2.5 w-[175px] sm:w-[225px] bg-[#0B141A] rounded-xl overflow-hidden shadow-2xl border border-white/10 text-left transition-all duration-300 transform scale-100 animate-fadeIn cursor-pointer"
                 >
                     {/* WhatsApp Mini Header */}
-                    <div className="bg-[#128C7E] px-3.5 py-2 flex items-center justify-between text-white">
-                        <div className="flex items-center gap-2.5">
-                            <div className="relative w-8 h-8 rounded-full overflow-hidden border border-white flex-shrink-0">
+                    <div className="bg-[#128C7E] px-2 py-1.5 sm:px-2.5 sm:py-1.5 flex items-center justify-between text-white">
+                        <div className="flex items-center gap-1.5 sm:gap-2">
+                            <div className="relative w-6 h-6 sm:w-7 sm:h-7 rounded-full overflow-hidden border border-white flex-shrink-0">
                                 <img src={femaleDoctor} alt="Dr. Tamanna Sharma" className="w-full h-full object-cover" />
-                                <span className="absolute bottom-0 right-0 w-2 h-2 bg-[#25D366] rounded-full"></span>
+                                <span className="absolute bottom-0 right-0 w-1.5 h-1.5 bg-[#25D366] rounded-full"></span>
                             </div>
                             <div className="flex flex-col">
-                                <h4 className="text-white text-xs font-black m-0 leading-tight">Dr. Tamanna Sharma</h4>
-                                <span className="text-white/80 text-[10px] font-semibold">Online • Replies instantly</span>
+                                <h4 className="text-white text-[10px] sm:text-[11px] font-black m-0 leading-tight">Dr. Tamanna Sharma</h4>
+                                <span className="text-white/80 text-[8px] sm:text-[9px] font-semibold">Online • Replies instantly</span>
                             </div>
                         </div>
                     </div>
 
                     {/* Chat Bubble Body */}
-                    <div className="p-3 bg-[#0B141A] bg-[radial-gradient(#1f2c34_1px,transparent_1px)] [background-size:14px_14px]">
-                        <div className="bg-[#005C4B] hover:bg-[#006E59] text-white p-2.5 rounded-xl rounded-tl-none shadow-sm transition-all">
-                            <p className="text-[11px] font-bold text-[#FF8DAF] mb-0.5">Dr. Tamanna Sharma</p>
-                            <p className="text-xs font-medium leading-relaxed m-0 text-white">
+                    <div className="p-2 sm:p-2.5 bg-[#0B141A] bg-[radial-gradient(#1f2c34_1px,transparent_1px)] [background-size:14px_14px]">
+                        <div className="bg-[#005C4B] hover:bg-[#006E59] text-white p-1.5 sm:p-2 rounded-lg rounded-tl-none shadow-sm transition-all">
+                            <p className="text-[9px] sm:text-[10px] font-bold text-[#FF8DAF] mb-0.5">Dr. Tamanna Sharma</p>
+                            <p className="text-[10px] sm:text-[11px] font-medium leading-snug m-0 text-white">
                                 👋 Hello! Need consultation for <strong>Piles, Fissure or Fistula</strong> treatment?
                             </p>
                         </div>

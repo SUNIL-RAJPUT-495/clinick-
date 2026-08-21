@@ -7,3 +7,22 @@ body {
   color: #F3E5EC !important;
   font-family: "Plus Jakarta Sans", "Inter", sans-serif;
 }
+
+@keyframes autoScrollTrack {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-auto-scroll {
+  display: flex;
+  width: max-content;
+  animation: autoScrollTrack 25s linear infinite;
+}
+
+.animate-auto-scroll:hover {
+  animation-play-state: paused;
+}
